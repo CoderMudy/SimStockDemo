@@ -45,15 +45,6 @@
   return self;
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-  [super viewWillAppear:animated];
-  //创建新牛
-  _littleCattleView = nil;
-  _littleCattleView = [[LittleCattleView alloc] initWithFrame:_clientView.bounds
-                                                  information:nil];
-  [_clientView addSubview:_littleCattleView];
-}
-
 -(void)viewWillDisappear:(BOOL)animated
 {
   [super viewWillDisappear:animated];
@@ -63,6 +54,8 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   _indicatorView.hidden = YES;
+  //创建新牛
+  [_littleCattleView setFrame:_clientView.bounds];
   [_topToolBar resetContentAndFlage:_pageTitle Mode:TTBM_Mode_Leveltwo];
   //右侧栏承接界面
   detailView = [[UIView alloc]
@@ -121,6 +114,12 @@
   //实盘开户 开户跳转按钮
   [AppDelegate pushViewControllerFromRight:[[BrokerageAccountListVC alloc]
                                                initWithOnLoginCallbalck:nil]];
+}
+
+/** 点击哭泣的小牛进行的刷新操作 */
+-(void)refreshButtonPressDown
+{
+  [self.brokerNameTableView getStockAccountsCompanyList];
 }
 
 #pragma mark - 左侧选择控件（表格）

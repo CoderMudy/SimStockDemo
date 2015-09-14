@@ -92,12 +92,6 @@
   [self setupImputMoneyTextField];
   [self setupRightPlaceholderWithText:@""];
   [self createConfirmPayView];
-
-  //  [[NSNotificationCenter defaultCenter]
-  //      addObserver:self
-  //         selector:@selector(inputMoneyDidChang)
-  //             name:UITextFieldTextDidChangeNotification
-  //           object:self.depositTopUpView.inputMoney];
 }
 
 /** 设置账户金额信息 */

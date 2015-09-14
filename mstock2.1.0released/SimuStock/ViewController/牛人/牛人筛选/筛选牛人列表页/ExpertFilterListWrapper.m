@@ -16,9 +16,9 @@
 @implementation ExpertFilterListItem
 
 - (void)jsonToObject:(NSDictionary *)dic {
-  self.seqId = [dic[@"id"] intValue];
+  self.seqId = [dic[@"id"] longLongValue];
   self.accountId = dic[@"accountId"];
-  self.uid = [dic[@"uid"] intValue];
+  self.uid = [dic[@"uid"] longLongValue];
   self.totalProfitRate = [dic[@"totalProfitRate"] floatValue];
   self.monthAvgProfitRate = [dic[@"monthAvgProfitRate"] floatValue];
   self.maxBackRate = [dic[@"maxBackRate"] floatValue];
@@ -26,8 +26,9 @@
   self.winRate = [dic[@"winRate"] floatValue];
   self.annualProfit = [dic[@"annualProfit"] floatValue];
   self.profitDaysRate = [dic[@"profitDaysRate"] floatValue];
-  self.avgDays = [dic[@"sucRate"] floatValue];
-  self.closeNum = [dic[@"closeNum"] intValue];
+  self.avgDays = [dic[@"avgDays"] floatValue];
+  self.closeNum = [dic[@"closeNum"] longValue];
+  self.sucRate = [dic[@"sucRate"] floatValue];
 }
 
 @end

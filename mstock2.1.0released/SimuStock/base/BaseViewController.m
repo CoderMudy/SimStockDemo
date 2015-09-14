@@ -101,6 +101,13 @@
 //创建小牛视图
 - (void)createLittleCattleView {
   _littleCattleView = [[LittleCattleView alloc] initWithFrame:self.view.frame information:nil];
+  __weak BaseViewController *weakSelf = self;
+  _littleCattleView.cryRefreshBlock = ^(){
+    BaseViewController *strongSelf = weakSelf;
+    if (strongSelf) {
+      [strongSelf refreshButtonPressDown];
+    }
+  };
   [self.view addSubview:_littleCattleView];
 }
 

@@ -19,6 +19,15 @@ typedef void (^RefreshGameAdvertisingBlock)();
 @interface ExpertHomePageAdapter : BaseTableAdapter
 /** 头 */
 @property(strong, nonatomic) ExpertNavigationView *headNavigationView;
+
+/** 无网情况下 */
+@property(assign, nonatomic) BOOL workNotBool;
+
+/**
+ *  在6 以上 股票信息为 16号字体 6 以下 为14号字体
+ */
+@property(assign, nonatomic) CGFloat coreTextFont;
+
 @end
 
 /**

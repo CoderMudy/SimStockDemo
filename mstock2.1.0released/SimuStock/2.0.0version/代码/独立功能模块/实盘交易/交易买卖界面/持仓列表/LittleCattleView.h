@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+/** 显示哭牛时 对外提供的 Block 刷新数据用的 */
+typedef void(^CryRefreshButtonBlock)();
+
 /**小牛图标加文字(贱笑牛或泪奔牛)*/
 @interface LittleCattleView : UIView
+
+@property(copy, nonatomic) CryRefreshButtonBlock cryRefreshBlock;
 
 @property(nonatomic) BOOL isCry;
 /**⭐️默认是贱笑牛（无持仓）。通过方法isCry:(BOOL)切换小牛视图和文字。information可以传nil*/
@@ -33,6 +38,5 @@
 
 /** 从新设置 小牛和文字位置 */
 -(void)resetCryInformationFrame;
-
 
 @end

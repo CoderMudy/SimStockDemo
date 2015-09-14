@@ -10,9 +10,14 @@
 #import "Globle.h"
 #import "TopAndBottomAlignmentLabel.h"
 #import "FTCoreTextView.h"
+#import <CoreText/CoreText.h>
+#import "UIButton+Block.h"
+#import "SimuUtil.h"
 
 #define SIDE_LENGTH 80.0  //图片为160×160
 #define LABEL_HEIGHT 34.0 //刚好容下两行文字
+
+static const CGFloat refreshButtonWidth = 146.0f;
 
 @interface LittleCattleView () {
   //小牛图
@@ -28,6 +33,15 @@
   NSString *_detailInformation;
   //当前是否是哭牛（无网络）
   BOOL _isCry;
+
+  /** 可变文字 */
+  NSMutableAttributedString *_attributedString;
+
+  /** 字号多大 */
+  CGFloat _textFontFloat;
+
+  /** 无网络时 可点击的button */
+  UIButton *_refreshButton;
 }
 
 @end
@@ -40,10 +54,58 @@
     // Initialization code
     self.userInteractionEnabled = NO; //点击穿透
     self.backgroundColor = [UIColor clearColor];
+    _textFontFloat = Font_Height_14_0;
+    //创建可变字符串
+    [self createAttributedCryString];
+    //创建小牛
     [self createViewWithinformation:information];
+    //创建刷新Button
+    [self createRefreshButton];
     self.hidden = YES;
   }
   return self;
+}
+
+/** 创建哭牛 文本 */
+- (void)createAttributedCryString {
+  NSMutableParagraphStyle *paragrapStyle = [[NSMutableParagraphStyle alloc] init];
+  paragrapStyle.alignment = NSTextAlignmentCenter;
+  NSDictionary *attributes = @{NSParagraphStyleAttributeName : paragrapStyle};
+  _attributedString =
+      [[NSMutableAttributedString alloc] initWithString:@"网络不给力," @"请点击重试"
+                                             attributes:attributes];
+  /** 要改变颜色的文本位置 */
+  [_attributedString setAttributes:@{
+    NSForegroundColorAttributeName : [Globle colorFromHexRGB:@"f89234"],
+    NSFontAttributeName : [UIFont systemFontOfSize:_textFontFloat],
+  } range:NSMakeRange(7, 2)];
+}
+
+/** 创建刷新按钮  */
+- (void)createRefreshButton {
+  _refreshButton = [UIButton buttonWithType:UIButtonTypeCustom];
+  _refreshButton.backgroundColor = [UIColor clearColor];
+  //  CGSize size = [SimuUtil labelContentSizeWithContent:@"网络不给力,请点击重试"
+  //                                             withFont:_textFontFloat
+  //                                             withSize:CGSizeMake(_label.width, _label.height)];
+  CGRect frame = CGRectMake((self.bounds.size.width - refreshButtonWidth) * 0.5, CGRectGetMinY(_imageView.frame),
+                            refreshButtonWidth, CGRectGetMaxY(_label.frame) - CGRectGetMinY(_imageView.frame));
+  _refreshButton.frame = frame;
+  _refreshButton.backgroundColor = [UIColor clearColor];
+  _refreshButton.hidden = YES;
+  [self addSubview:_refreshButton];
+  
+  __weak LittleCattleView *weakSelf = self;
+  [_refreshButton setOnButtonPressedHandler:^{
+    LittleCattleView *strongSelf = weakSelf;
+    if (strongSelf) {
+      //对外 提供 Block
+      NSLog(@"点击了 哭牛 请求刷新数据");
+      if (strongSelf.cryRefreshBlock) {
+        strongSelf.cryRefreshBlock();
+      }
+    }
+  }];
 }
 
 //双图合一方法
@@ -56,10 +118,10 @@
   _label = [[TopAndBottomAlignmentLabel alloc]
       initWithFrame:CGRectMake(0.0, _imageView.frame.origin.y + SIDE_LENGTH + 5.0, self.bounds.size.width, LABEL_HEIGHT)];
   _label.backgroundColor = [UIColor clearColor];
-  _label.textAlignment = NSTextAlignmentCenter;
+  [_label setTextAlignment:NSTextAlignmentCenter];
   _label.verticalAlignment = VerticalAlignmentTop;
   _label.textColor = [Globle colorFromHexRGB:Color_Text_Common];
-  _label.font = [UIFont systemFontOfSize:Font_Height_14_0];
+  _label.font = [UIFont systemFontOfSize:_textFontFloat];
   _label.numberOfLines = 0;
 
   _detailInfo =
@@ -68,7 +130,7 @@
   FTCoreTextStyle *defaultStyle = [[FTCoreTextStyle alloc] init];
   defaultStyle.name = FTCoreTextTagDefault;
   defaultStyle.textAlignment = FTCoreTextAlignementCenter;
-  defaultStyle.font = [UIFont systemFontOfSize:Font_Height_14_0];
+  defaultStyle.font = [UIFont systemFontOfSize:_textFontFloat];
   [_detailInfo addStyle:defaultStyle];
 
   //如果指定了信息，则使用指定的，没有的话就创建默认的
@@ -89,9 +151,13 @@
   //如果是哭牛，则使用哭得图片并替换文字
   if (isCry) {
     _imageView.image = [UIImage imageNamed:@"cryCattle"];
-    _label.text = @"神啊！快给他来点儿网络吧！";
+    [_label setAttributedText:_attributedString];
+    _refreshButton.hidden = NO;
     _detailInfo.hidden = YES;
+    self.userInteractionEnabled = YES;
   } else {
+    self.userInteractionEnabled = NO;
+    _refreshButton.hidden = YES;
     _imageView.image = [UIImage imageNamed:@"laughCattle"];
     //若有自定义文字，使用自定义文字，否则使用默认文字
     _tipInformation ? (_label.text = _tipInformation) : (_label.text = @"暂无持仓数据");

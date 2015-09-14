@@ -45,7 +45,7 @@
   }];
 }
 
-/** 挑战行情 */
+/** 跳转行情 */
 - (void)jumpQuotationButton {
   NSLog(@"将会挑战到行情页面");
   [TrendViewController showDetailWithStockCode:self.listItem.stockCode
@@ -67,7 +67,7 @@
 }
 
 #pragma mark-- 绑定数据
-- (void)bindData:(ConcludesListItem *)item {
+- (void)bindData:(ConcludesListItem *)item withCoreTextFont:(CGFloat)font{
 
   self.notWorkHeadImage.hidden = YES;
   self.headImageView.hidden = NO;
@@ -95,11 +95,11 @@
   //昵称设定
   _nickNameView.width = WIDTH_OF_SCREEN - size.width - 86;
   [_nickNameView bindUserListItem:item.writer withFont:Font_Height_16_0 withOriginalPoster:NO];
-
+  
   CGFloat tempCoreHeight =
-      [FTCoreTextView heightWithText:item.content width:_coreTextView.width font:Font_Height_14_0];
+      [FTCoreTextView heightWithText:item.content width:_coreTextView.width font:font];
   self.coreHeight.constant = tempCoreHeight;
-  [_coreTextView setTextSize:Font_Height_14_0];
+  [_coreTextView setTextSize:font];
   _coreTextView.text = item.content;
   [_coreTextView fitToSuggestedHeight];
 }

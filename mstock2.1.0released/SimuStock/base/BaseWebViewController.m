@@ -12,9 +12,7 @@
 
 @implementation BaseWebViewController
 
-- (id)initWithFrame:(CGRect)frame
-      withNameTitle:(NSString *)title
-            andPath:(NSString *)path {
+- (id)initWithFrame:(CGRect)frame withNameTitle:(NSString *)title andPath:(NSString *)path {
 
   if (self = [super initWithFrame:frame]) {
     self.textName = title;
@@ -26,6 +24,15 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   self.dataBinded = NO;
+
+  /** 哭泣的小牛 点击刷新操作 */
+  __weak BaseWebViewController *weakSelf = self;
+  self.littleCattleView.cryRefreshBlock = ^() {
+    BaseWebViewController *strongSelf = weakSelf;
+    if (strongSelf) {
+      [strongSelf refreshButtonPressDown];
+    }
+  };
 
   [self creatWebView:self.textUrl];
 }
@@ -96,8 +103,7 @@
 
   //无标题，取网站标题
   if (!_textName) {
-    self.textName =
-        [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+    self.textName = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
     if (self.onTitleReady) {
       self.onTitleReady(self.textName);
     }
@@ -114,8 +120,7 @@
     }
     [NewShowLabel showNoNetworkTip];
   }
-  NSLog(@"webView didFailLoadWithError: %@, \\n%@", [webView request].URL,
-        error);
+  NSLog(@"webView didFailLoadWithError: %@, \\n%@", [webView request].URL, error);
 }
 
 #pragma mark

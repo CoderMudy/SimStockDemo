@@ -47,7 +47,7 @@
     default:
       break;
     }
-    dataArray = [[DataArray alloc] init];
+    self.dataArray = [[DataArray alloc] init];
     viewArray = [[NSMutableArray alloc] init];
   }
   return self;
@@ -77,9 +77,9 @@
     return;
   }
   GameAdvertisingData *adVertisingData;
-  if (!dataArray.dataBinded) {
+  if (!self.dataArray.dataBinded) {
     adVertisingData = [CacheUtil loadMncgBanner];
-    if (adVertisingData && [adVertisingData.dataArray count] > 0) {
+    if (adVertisingData && [adVertisingData.self.dataArray count] > 0) {
       //是有缓存的
       [self bindGameAdvertisingData:adVertisingData saveToCache:NO];
     }
@@ -125,19 +125,19 @@
   if (saveToCache) {
     [CacheUtil saveMncgBanner:adDataList withAdType:adListType];
   }
-  dataArray.dataBinded = YES;
-  [dataArray.array removeAllObjects];
-  for (GameAdvertisingData *adData in adDataList.dataArray) {
+  self.dataArray.dataBinded = YES;
+  [self.dataArray.array removeAllObjects];
+  for (GameAdvertisingData *adData in adDataList.self.dataArray) {
     //只显示图片广告
     if ([adData.type isEqualToString:@"2501"]) { // 2501：图片广告
-      [dataArray.array addObject:adData];
+      [self.dataArray.array addObject:adData];
     }
   }
-  if ([dataArray.array count] > 0) {
+  if ([self.dataArray.array count] > 0) {
     [self createScrollView];
   }
   if (_delegate && [_delegate respondsToSelector:@selector(advertisingPageJudgment:intg:)]) {
-    [_delegate advertisingPageJudgment:[dataArray.array count] > 0 intg:[dataArray.array count]];
+    [_delegate advertisingPageJudgment:[self.dataArray.array count] > 0 intg:[self.dataArray.array count]];
   }
 }
 - (UIView *)addImageWithIndex:(int)index andFrame:(CGRect)frame {
@@ -145,7 +145,7 @@
   CGRect imageButtonFrame = CGRectMake(0, 0,adViewFrame.size.width, adViewFrame.size.height);
   UIView *adView =
       [[UIView alloc] initWithFrame:imageButtonFrame];
-  GameAdvertisingData *adData = dataArray.array[index];
+  GameAdvertisingData *adData = self.dataArray.array[index];
   UIButton *imageButton =
       [[UIButton alloc] initWithFrame:CGRectMake(0, 0, adView.bounds.size.width, adView.bounds.size.height)];
   imageButton.backgroundColor = [Globle colorFromHexRGB:Color_White];
@@ -178,7 +178,7 @@
     [self.view addSubview:whiteView];
   }
   [whiteView removeAllSubviews];
-  NSInteger adImageCount = [dataArray.array count];
+  NSInteger adImageCount = [self.dataArray.array count];
   if (adImageCount <= 1) {
     [whiteView addSubview:[self addImageWithIndex:0 andFrame:whiteView.bounds]];
   } else {
@@ -225,7 +225,7 @@
 
 ///图片上透明按钮:广告内容页跳转
 - (void)pictureButtonMethod:(UIButton *)btn {
-  GameAdvertisingData *adData = dataArray.array[btn.tag - 1000];
+  GameAdvertisingData *adData = self.dataArray.array[btn.tag - 1000];
   [self touchAdvertise:adData];
 }
 

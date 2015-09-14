@@ -15,7 +15,7 @@
   [super jsonToObject:dic];
   self.commissionid = dic[@"commissionid"];
 }
-
+/** 买入下单操作 */
 + (void)buyStockWithStockCode:(NSString *)stockCode
                     withPrice:(NSString *)price
                    withAmount:(NSString *)amount
@@ -35,7 +35,7 @@
                 withRequestObjectClass:[RealTradeBuySellEntrustResult class]
                withHttpRequestCallBack:callback];
 }
-
+/** 卖出下单操作 */
 + (void)sellStockWithStockCode:(NSString *)stockCode
                      withPrice:(NSString *)price
                     withAmount:(NSString *)amount

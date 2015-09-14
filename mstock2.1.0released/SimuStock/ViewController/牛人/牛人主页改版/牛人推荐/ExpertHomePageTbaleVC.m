@@ -14,7 +14,6 @@
 #import "CacheUtil.h"
 #import "ExpertRecommendViewController.h"
 
-
 /**
  *  tableView控制器
  */
@@ -35,10 +34,11 @@
 
 #pragma mark-- 每个区 分多少行
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  if (![self.baseTableViewController dataBinded]) {
+  if (self.workNotBool || self.baseTableViewController.dataBinded) {
+    return self.dataArray.array.count;
+  } else {
     return 2;
   }
-  return self.dataArray.array.count;
 }
 
 #pragma mark-- cell
@@ -46,10 +46,12 @@
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   ExpertCell *cell = [tableView dequeueReusableCellWithIdentifier:self.nibName];
   cell.selectionStyle = UITableViewCellSelectionStyleNone;
-  if (![self.baseTableViewController dataBinded]) {
+  if (self.workNotBool || self.baseTableViewController.dataBinded) {
+    if (self.dataArray.array.count > 0 && self.dataArray) {
+      [cell bindData:self.dataArray.array[indexPath.row] withCoreTextFont:self.coreTextFont];
+    }
+  } else {
     [cell notWorkBindData];
-  }else{
-   [cell bindData:self.dataArray.array[indexPath.row]]; 
   }
   return cell;
 }
@@ -103,11 +105,6 @@
   //隐藏上啦刷
   self.littleCattleView.hidden = YES;
 }
-//加载缓存
--(void)loadCache{
-  
-}
-
 
 #pragma mark-- 子类必须实现的
 /** 请求最新数据，此方法子类必须实现 */
@@ -140,6 +137,12 @@
   if (_tableAdapter == nil) {
     _tableAdapter = [[ExpertHomePageAdapter alloc] initWithTableViewController:self
                                                                  withDataArray:self.dataArray];
+    ((ExpertHomePageAdapter *)_tableAdapter).workNotBool = YES;
+    if ([[UIScreen mainScreen] bounds].size.width > 320.0f) {
+      ((ExpertHomePageAdapter *)_tableAdapter).coreTextFont = Font_Height_16_0;
+    } else {
+      ((ExpertHomePageAdapter *)_tableAdapter).coreTextFont = Font_Height_14_0;
+    }
     UINib *cellNib = [UINib nibWithNibName:_tableAdapter.nibName bundle:nil];
     //注册cell
     [self.tableView registerNib:cellNib forCellReuseIdentifier:_tableAdapter.nibName];
@@ -167,30 +170,37 @@
   if (![SimuUtil isExistNetwork]) {
     //数据有没有绑定
     if (![self dataBinded]) {
+      ((ExpertHomePageAdapter *)_tableAdapter).workNotBool = NO;
       [self.tableView reloadData];
       self.footerView.hidden = YES;
     }
-  }else{
+  } else {
+    ((ExpertHomePageAdapter *)_tableAdapter).workNotBool = YES;
     [self requestResponseWithRefreshType:RefreshTypeRefresh];
   }
 }
 
-- (void)refreshViewBeginRefreshing:(MJRefreshBaseView *)refreshView
-{
-  [super refreshViewBeginRefreshing:refreshView];
-    if (self.gameAdvertisingBlock) {
-      self.gameAdvertisingBlock();
+- (void)refreshViewBeginRefreshing:(MJRefreshBaseView *)refreshView {
+  if (![SimuUtil isExistNetwork]) {
+    if (![self dataBinded]) {
+      //数据没绑定
+      ((ExpertHomePageAdapter *)_tableAdapter).workNotBool = NO;
+    } else {
+      ((ExpertHomePageAdapter *)_tableAdapter).workNotBool = YES;
     }
+  }
+  [super refreshViewBeginRefreshing:refreshView];
+  if (self.gameAdvertisingBlock) {
+    self.gameAdvertisingBlock();
+  }
 }
 
--(void)viewWillLayoutSubviews
-{
+- (void)viewWillLayoutSubviews {
   [super viewWillLayoutSubviews];
-  [self.tableView reloadData];
 }
 
 /** 当服务器挂了 情况下 返货 失败的情况下 该页面不需要 无网络小牛*/
-- (void)setNoNetWork{
+- (void)setNoNetWork {
   [NewShowLabel showNoNetworkTip];
   if (!self.dataArray.dataBinded) {
     self.tableView.tableFooterView = nil;

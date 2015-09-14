@@ -37,13 +37,13 @@
 @interface ExpertFilterListItem : NSObject <ParseJson>
 
 /**时间线id*/
-@property(nonatomic, assign) int seqId;
+@property(nonatomic, assign) long long seqId;
 
 /**账户id*/
 @property(nonatomic, copy) NSString *accountId;
 
 /**用户id*/
-@property(nonatomic, assign) int uid;
+@property(nonatomic, assign) long long uid;
 
 /** 总盈利率 */
 @property(nonatomic, assign) CGFloat totalProfitRate;
@@ -73,7 +73,7 @@
 @property(nonatomic, assign) CGFloat profitDaysRate;
 
 /** 完整交易次数 */
-@property(nonatomic, assign) int closeNum;
+@property(nonatomic, assign) long closeNum;
 /** 用户评级数据 */
 @property(strong, nonatomic) UserListItem *writer;
 

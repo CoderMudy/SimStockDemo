@@ -61,7 +61,4 @@
         withMatchType:(NSString *)matchType
          withRankType:(NSString *)rankType;
 
-/** 对外提供的刷新方法 */
-- (void)foreignProvideRefreshWithIndex:(NSInteger)index;
-
 @end

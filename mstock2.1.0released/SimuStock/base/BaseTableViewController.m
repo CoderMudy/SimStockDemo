@@ -30,10 +30,8 @@
 - (void)requestDataListWithRefreshType:(RefreshType)refreshType
                          withDataArray:(DataArray *)existDataList
                           withCallBack:(HttpRequestCallBack *)callback {
-  [NSException
-       raise:@"not implement method"
-      format:
-          @"[requestWithRefreshType:withDataArray:] method is not implemented"];
+  [NSException raise:@"not implement method"
+              format:@"[requestWithRefreshType:withDataArray:] method is not implemented"];
 }
 
 - (BOOL)isDataValidWithResponseObject:(NSObject<Collectionable> *)latestData
@@ -57,6 +55,15 @@
   [super viewDidLoad];
   [self createViews];
   self.littleCattleView.frame = self.view.bounds;
+
+  //哭泣的小牛 点击刷新 默认实现
+  __weak BaseTableViewController *weakSelf = self;
+  self.littleCattleView.cryRefreshBlock = ^() {
+    BaseTableViewController *strongSelf = weakSelf;
+    if (strongSelf) {
+      [strongSelf refreshButtonPressDown];
+    }
+  };
 }
 
 - (void)createViews {
@@ -99,20 +106,15 @@
 #pragma mark MJRefreshBaseViewDelegate代理方法 - 进入刷新状态就会调用
 - (void)refreshViewBeginRefreshing:(MJRefreshBaseView *)refreshView {
   if (![SimuUtil isExistNetwork]) {
-    [self performSelector:@selector(endRefreshLoading)
-               withObject:nil
-               afterDelay:0.5];
+    [self performSelector:@selector(endRefreshLoading) withObject:nil afterDelay:0.5];
     [self setNoNetWork];
     return;
   }
 
   if (refreshView == _footerView) {
     //当前无数据，不能加载更多
-    if (isLoadMore || _dataArray.dataComplete ||
-        [_dataArray.array count] == 0) {
-      [self performSelector:@selector(endRefreshLoading)
-                 withObject:nil
-                 afterDelay:0.5];
+    if (isLoadMore || _dataArray.dataComplete || [_dataArray.array count] == 0) {
+      [self performSelector:@selector(endRefreshLoading) withObject:nil afterDelay:0.5];
       return;
     }
     isLoadMore = YES;
@@ -164,8 +166,7 @@
     return;
   }
 
-  NSDictionary *requestParamerts =
-      [self getRequestParamertsWithRefreshType:refreshType];
+  NSDictionary *requestParamerts = [self getRequestParamertsWithRefreshType:refreshType];
 
   HttpRequestCallBack *callback = [[HttpRequestCallBack alloc] init];
   __weak BaseTableViewController *weakSelf = self;
@@ -198,9 +199,7 @@
     [weakSelf setNoNetWork];
   };
 
-  [self requestDataListWithRefreshType:refreshType
-                         withDataArray:_dataArray
-                          withCallBack:callback];
+  [self requestDataListWithRefreshType:refreshType withDataArray:_dataArray withCallBack:callback];
 }
 
 //绑定数据
@@ -215,8 +214,7 @@
     return;
   }
 
-  if (refreshType == RefreshTypeRefresh ||
-      refreshType == RefreshTypeHeaderRefresh ||
+  if (refreshType == RefreshTypeRefresh || refreshType == RefreshTypeHeaderRefresh ||
       refreshType == RefreshTypeTimerRefresh) {
     //刷新，则清除数据
     _headerView.lastUpdateTime = [NSDate date];
@@ -248,9 +246,7 @@
     self.littleCattleView.hidden = YES;
 
     if (_dataArray.dataComplete) {
-      [_tableView setTableFooterView:_showTableFooter
-                                         ? [self noDataShowFootView]
-                                         : nil];
+      [_tableView setTableFooterView:_showTableFooter ? [self noDataShowFootView] : nil];
       if (!_showTableFooter && refreshType == RefreshTypeLoaderMore) {
         [NewShowLabel setMessageContent:@"暂无更多数据"];
       }
@@ -276,22 +272,18 @@
 - (UIView *)noDataShowFootView {
   if (noDataFootView == nil) {
     CGRect frame = self.view.frame;
-    noDataFootView =
-        [[UIView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, 1.0f)];
+    noDataFootView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, 1.0f)];
     noDataFootView.backgroundColor = [Globle colorFromHexRGB:Color_BG_Common];
     //灰线
-    UIView *grayLine =
-        [[UIView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, 0.5f)];
+    UIView *grayLine = [[UIView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, 0.5f)];
     grayLine.backgroundColor = [Globle colorFromHexRGB:@"e3e3e3"];
     [noDataFootView addSubview:grayLine];
     //白线
-    UIView *whiteLine = [[UIView alloc]
-        initWithFrame:CGRectMake(0, 0.5f, frame.size.width, 0.5f)];
+    UIView *whiteLine = [[UIView alloc] initWithFrame:CGRectMake(0, 0.5f, frame.size.width, 0.5f)];
     whiteLine.backgroundColor = [UIColor whiteColor];
     [noDataFootView addSubview:whiteLine];
 
-    UILabel *noDataLabel =
-        [[UILabel alloc] initWithFrame:CGRectMake(0, 2, frame.size.width, 38)];
+    UILabel *noDataLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 2, frame.size.width, 38)];
     noDataLabel.backgroundColor = [Globle colorFromHexRGB:Color_BG_Common];
     [noDataFootView addSubview:noDataLabel];
     //按钮

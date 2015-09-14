@@ -44,9 +44,9 @@ typedef NS_ENUM(NSUInteger, AdListType) {
 - (void)advertisingPageJudgment:(BOOL)AdBool intg:(NSInteger)intg;
 @end
 @interface GameAdvertisingViewController : UIViewController <SimTopBannerViewDelegate> {
+  /** 滚动视图 */
   CycleScrollView *gameScrollView;
-  /** 数据类 */
-  DataArray *dataArray;
+  
   /** 存放视图图片 */
   NSMutableArray *viewArray;
   /** 白色底板图 */
@@ -57,6 +57,9 @@ typedef NS_ENUM(NSUInteger, AdListType) {
   AdListType adListType;
 }
 @property(nonatomic, weak) id<GameAdvertisingDelegate> delegate;
+
+/** 数据类 */
+@property(strong, nonatomic) DataArray *dataArray;
 
 - (id)initWithAdListType:(AdListType)imageAdListType;
 

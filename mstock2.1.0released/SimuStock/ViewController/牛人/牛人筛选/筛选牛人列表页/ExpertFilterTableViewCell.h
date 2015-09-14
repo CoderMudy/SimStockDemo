@@ -33,7 +33,7 @@ static const CGFloat EFTableViewCellUnFoldHeight = 235.0f;
 /**成功率*/
 @property(weak, nonatomic) IBOutlet UILabel *successRateLab;
 
-/**平均持股数*/
+/**平均持股天数*/
 @property(weak, nonatomic) IBOutlet UILabel *averageNumberOfSharesLab;
 
 /**超越上证*/
@@ -61,7 +61,9 @@ static const CGFloat EFTableViewCellUnFoldHeight = 235.0f;
 @property(weak, nonatomic) IBOutlet UILabel *sortNumberLab;
 
 ///数据绑定
-- (void)bindExpertFilterItem:(ExpertFilterListItem *)item withSortNum:(NSNumber *)sortNum withSelected:(BOOL) selected;
+- (void)bindExpertFilterItem:(ExpertFilterListItem *)item
+                 withSortNum:(NSNumber *)sortNum
+                withSelected:(BOOL)selected;
 /**cell展开收缩*/
 - (void)cellFold:(BOOL)fold;
 @end

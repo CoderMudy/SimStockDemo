@@ -35,28 +35,18 @@
   _mutableDictionary = @{
     @"101" : @[ @"3", @"（总盈利率）", @0, @"炒股牛人-今日盈利榜", @"总盈利榜" ],
     @"102" : @[ @"4", @"（成功率）", @2, @"炒股牛人-周盈利榜", @"成功率榜" ],
-    @"103" : @[ @"6",
-                @"（总盈利率）",
-                @0,
-                @"炒股牛人-稳健牛人榜单",
-                @"稳健榜" ],
-    @"104" : @[ @"7",
-                @"（总盈利率）",
-                @0,
-                @"炒股牛人-短线牛人榜单",
-                @"短线榜" ],
+    @"103" : @[ @"6", @"（总盈利率）", @0, @"炒股牛人-稳健牛人榜单", @"稳健榜" ],
+    @"104" : @[ @"7", @"（总盈利率）", @0, @"炒股牛人-短线牛人榜单", @"短线榜" ],
     @"105" : @[ @"5", @"（月盈利率）", @2, @"炒股牛人-月盈利榜", @"月盈利榜" ],
     @"106" : @[ @"8", @"（周盈利率）", @2, @"炒股牛人-月盈利榜", @"周盈利榜" ],
     @"107" : @[ @"2", @"（人气值）", @0, @"炒股牛人-人气榜单", @"人气榜" ],
-    @"108" :
-        @[ @"1", @"（推荐指数）", @0, @"炒股牛人-优顾推荐榜", @"推荐榜" ]
+    @"108" : @[ @"1", @"（推荐指数）", @0, @"炒股牛人-优顾推荐榜", @"推荐榜" ]
   };
 
   //加载广告
   [self creatAdvView];
   //设置Button
   [self setUpButton];
-  
 }
 
 #pragma mark-- 加载广告
@@ -74,21 +64,22 @@
   [self.advViewVC requestImageAdvertiseList];
 }
 
--(void)viewWillLayoutSubviews
-{
+- (void)viewWillLayoutSubviews {
   [super viewWillLayoutSubviews];
   self.advViewVC.view.frame = self.advertisingView.bounds;
 }
 
-
 - (void)advertisingPageJudgment:(BOOL)AdBool intg:(NSInteger)intg {
-  self.notWorkLittleImageView.hidden = AdBool;
-  if (AdBool) {
+  //数据已绑定
+  if (self.advViewVC.dataArray.dataBinded) {
+    self.notWorkLittleImageView.hidden = YES;
     //有广告
-    self.advViewVC.view.userInteractionEnabled = AdBool;
+    self.advViewVC.view.userInteractionEnabled = YES;
     [self.advertisingView addSubview:_advViewVC.view];
     self.advertisingView.clipsToBounds = YES;
-  }else{
+  } else {
+    //数据为绑定 或者 请求失败
+    self.notWorkLittleImageView.hidden = NO;
     [self.advViewVC.view removeAllSubviews];
   }
 }
