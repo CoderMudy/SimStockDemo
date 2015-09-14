@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomePageTableHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="642"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J5u-N2-egG" userLabel="userInfoView" customClass="HomePageUserInfoView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="198"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="198" id="Jel-k7-z0o"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="260-ey-ptn" userLabel="@Ta View" customClass="HomeAtSuperView">
+                    <rect key="frame" x="0.0" y="198" width="320" height="54"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="pKT-S5-Jnr"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9n-f2-2cD" userLabel="交易评级View" customClass="HomeUserTradeGradeWidgetView">
+                    <rect key="frame" x="0.0" y="252" width="320" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="xA2-zf-KVO"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j5t-a6-clZ" userLabel="盈利曲线" customClass="HomePageProfitSuperView">
+                    <rect key="frame" x="0.0" y="312" width="320" height="205"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="205" id="eLq-jf-ia5"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N4g-gP-5SN" userLabel="交易明细" customClass="HomeAssetInfoSuperView">
+                    <rect key="frame" x="0.0" y="517" width="320" height="125"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="125" id="UMX-ov-uCD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="j9n-f2-2cD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7gc-K4-EP2"/>
+                <constraint firstItem="j5t-a6-clZ" firstAttribute="top" secondItem="j9n-f2-2cD" secondAttribute="bottom" id="8gQ-Yk-eza"/>
+                <constraint firstItem="j5t-a6-clZ" firstAttribute="leading" secondItem="j9n-f2-2cD" secondAttribute="trailing" constant="-320" id="989-bh-Rhz"/>
+                <constraint firstItem="j5t-a6-clZ" firstAttribute="top" secondItem="j9n-f2-2cD" secondAttribute="bottom" id="9J4-2O-eQG"/>
+                <constraint firstItem="j9n-f2-2cD" firstAttribute="top" secondItem="260-ey-ptn" secondAttribute="bottom" id="Ahg-FT-iIy"/>
+                <constraint firstItem="J5u-N2-egG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="C6E-1Z-oAT"/>
+                <constraint firstItem="N4g-gP-5SN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="I1G-Pn-0sg"/>
+                <constraint firstItem="260-ey-ptn" firstAttribute="top" secondItem="J5u-N2-egG" secondAttribute="bottom" id="IcS-Ia-n8Y"/>
+                <constraint firstAttribute="trailing" secondItem="260-ey-ptn" secondAttribute="trailing" id="IkN-Z2-8Bb"/>
+                <constraint firstAttribute="trailing" secondItem="J5u-N2-egG" secondAttribute="trailing" id="J1f-GX-8VR"/>
+                <constraint firstAttribute="bottom" secondItem="N4g-gP-5SN" secondAttribute="bottom" id="LyD-dR-uK1"/>
+                <constraint firstItem="260-ey-ptn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Rrd-QB-Lsm"/>
+                <constraint firstAttribute="trailing" secondItem="j5t-a6-clZ" secondAttribute="trailing" id="UEz-Ui-Vqc"/>
+                <constraint firstAttribute="trailing" secondItem="j9n-f2-2cD" secondAttribute="trailing" id="UmZ-2Q-dfL"/>
+                <constraint firstItem="260-ey-ptn" firstAttribute="top" secondItem="J5u-N2-egG" secondAttribute="bottom" id="ZkV-SK-jf0"/>
+                <constraint firstItem="N4g-gP-5SN" firstAttribute="top" secondItem="j5t-a6-clZ" secondAttribute="bottom" id="aq2-sQ-gec"/>
+                <constraint firstItem="N4g-gP-5SN" firstAttribute="top" secondItem="j5t-a6-clZ" secondAttribute="bottom" id="fDs-7o-STt"/>
+                <constraint firstItem="J5u-N2-egG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iQt-2Q-cy8"/>
+                <constraint firstItem="j9n-f2-2cD" firstAttribute="top" secondItem="260-ey-ptn" secondAttribute="bottom" id="iXT-CY-9Pr"/>
+                <constraint firstAttribute="trailing" secondItem="N4g-gP-5SN" secondAttribute="trailing" id="nYj-W8-Me9"/>
+                <constraint firstAttribute="bottom" secondItem="N4g-gP-5SN" secondAttribute="bottom" id="tL7-71-atj"/>
+                <constraint firstItem="j5t-a6-clZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ugi-da-WPN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="IcS-Ia-n8Y"/>
+                    <exclude reference="Ahg-FT-iIy"/>
+                    <exclude reference="989-bh-Rhz"/>
+                    <exclude reference="9J4-2O-eQG"/>
+                    <exclude reference="LyD-dR-uK1"/>
+                    <exclude reference="aq2-sQ-gec"/>
+                    <exclude reference="tL7-71-atj"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="followAndAttentionHeight" destination="pKT-S5-Jnr" id="A6d-kY-S3f"/>
+                <outlet property="followAndAttentionView" destination="260-ey-ptn" id="m7u-Bg-iSv"/>
+                <outlet property="profitCurveHeight" destination="eLq-jf-ia5" id="Dd5-U6-8RL"/>
+                <outlet property="profitCurveView" destination="j5t-a6-clZ" id="JBI-2t-iIe"/>
+                <outlet property="tradeGradeWidgetHeight" destination="xA2-zf-KVO" id="IzV-87-wqh"/>
+                <outlet property="tradeGradeWidgetView" destination="j9n-f2-2cD" id="ywb-gf-uKU"/>
+                <outlet property="userAssetsHeight" destination="UMX-ov-uCD" id="Y9g-0j-aqy"/>
+                <outlet property="userAssetsView" destination="N4g-gP-5SN" id="dxx-YB-NZv"/>
+                <outlet property="userInfoView" destination="J5u-N2-egG" id="v3d-z2-Dbg"/>
+                <outlet property="userInfoViewHeight" destination="Jel-k7-z0o" id="mzV-gZ-1xx"/>
+            </connections>
+            <point key="canvasLocation" x="502" y="360"/>
+        </view>
+    </objects>
+</document>

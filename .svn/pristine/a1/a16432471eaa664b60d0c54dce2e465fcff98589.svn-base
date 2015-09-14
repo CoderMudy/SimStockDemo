@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="207" id="oHF-i3-Tdw" customClass="MyChatStockTVCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="207"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oHF-i3-Tdw" id="EeK-iZ-zf4">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OI5-LA-lXx" userLabel="底部分割线" customClass="CellBottomLinesView">
+                        <rect key="frame" x="0.0" y="205" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="amD-9Z-mO2"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="itd-W5-VLy" userLabel="timeLineUp">
+                        <rect key="frame" x="20" y="0.0" width="1" height="10"/>
+                        <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="hWX-hD-KOi"/>
+                            <constraint firstAttribute="width" constant="1" id="nbV-Ql-pcg"/>
+                        </constraints>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PT6-a8-dNU">
+                        <rect key="frame" x="8" y="10" width="25" height="25"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gw-kj-XI9">
+                                <rect key="frame" x="2" y="2" width="22" height="22"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="我的聊股_发表小图标.png" translatesAutoresizingMaskIntoConstraints="NO" id="8XY-K4-kkU" userLabel="chatImage">
+                                        <rect key="frame" x="5" y="5" width="12" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="4vx-Vw-QaX"/>
+                                            <constraint firstAttribute="width" constant="12" id="y29-oJ-fQU"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.52941176469999995" green="0.7843137255" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="BI7-UK-9a2"/>
+                                    <constraint firstAttribute="centerY" secondItem="8XY-K4-kkU" secondAttribute="centerY" id="YOV-au-rH7"/>
+                                    <constraint firstAttribute="width" constant="22" id="hc0-zc-x8N"/>
+                                    <constraint firstAttribute="centerX" secondItem="8XY-K4-kkU" secondAttribute="centerX" id="kwT-0p-KQV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="11"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="6sM-bg-zae"/>
+                            <constraint firstAttribute="height" constant="25" id="QNf-FS-jCn"/>
+                            <constraint firstAttribute="centerY" secondItem="7gw-kj-XI9" secondAttribute="centerY" id="gle-6X-ISB"/>
+                            <constraint firstAttribute="centerX" secondItem="7gw-kj-XI9" secondAttribute="centerX" id="lrc-2m-8oR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12.5"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOf-nl-XuA" userLabel="timeLineDown">
+                        <rect key="frame" x="20" y="35" width="1" height="171"/>
+                        <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="9L2-ya-fdM"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0D6-Dt-kb7" userLabel="发表时间Lable">
+                        <rect key="frame" x="42" y="12" width="120" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="9js-Ae-BOh"/>
+                            <constraint firstAttribute="width" constant="120" id="eZh-ea-vVJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.35294117650000001" green="0.35294117650000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XLM-WK-ocK" userLabel="聊股内容" customClass="FTCoreTextView">
+                        <rect key="frame" x="42" y="71" width="268" height="22"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="b4G-bg-5uq"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kRW-Zh-KgD" userLabel="发表的图片" customClass="WBImageView">
+                        <rect key="frame" x="42" y="89" width="59" height="43"/>
+                        <accessibility key="accessibilityConfiguration" label=""/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="WGh-lQ-z8A"/>
+                            <constraint firstAttribute="width" constant="59" id="oPi-CN-lrW"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kRW-Zh-KgD" firstAttribute="top" secondItem="0D6-Dt-kb7" secondAttribute="bottom" constant="66" id="CWW-RR-Azo"/>
+                    <constraint firstItem="XLM-WK-ocK" firstAttribute="leading" secondItem="0D6-Dt-kb7" secondAttribute="leading" id="JPA-nv-gzL"/>
+                    <constraint firstItem="eOf-nl-XuA" firstAttribute="top" secondItem="PT6-a8-dNU" secondAttribute="bottom" id="Mq7-Tf-aTC"/>
+                    <constraint firstItem="PT6-a8-dNU" firstAttribute="centerX" secondItem="itd-W5-VLy" secondAttribute="centerX" id="PZX-XR-9qR"/>
+                    <constraint firstItem="OI5-LA-lXx" firstAttribute="leading" secondItem="EeK-iZ-zf4" secondAttribute="leading" id="WBL-Uq-GBd"/>
+                    <constraint firstItem="0D6-Dt-kb7" firstAttribute="leading" secondItem="PT6-a8-dNU" secondAttribute="trailing" constant="9" id="X3c-ZL-L3k"/>
+                    <constraint firstItem="itd-W5-VLy" firstAttribute="leading" secondItem="EeK-iZ-zf4" secondAttribute="leading" constant="20" id="afW-Jf-AWG"/>
+                    <constraint firstAttribute="bottom" secondItem="eOf-nl-XuA" secondAttribute="bottom" id="axU-xd-Ng6"/>
+                    <constraint firstAttribute="trailing" secondItem="OI5-LA-lXx" secondAttribute="trailing" id="cY8-Bl-OZg"/>
+                    <constraint firstItem="eOf-nl-XuA" firstAttribute="leading" secondItem="kRW-Zh-KgD" secondAttribute="leading" constant="-22" id="dfQ-Oy-gel"/>
+                    <constraint firstItem="PT6-a8-dNU" firstAttribute="top" secondItem="itd-W5-VLy" secondAttribute="bottom" id="eRB-5w-Nr8"/>
+                    <constraint firstItem="itd-W5-VLy" firstAttribute="top" secondItem="EeK-iZ-zf4" secondAttribute="top" id="ejH-c6-uhY"/>
+                    <constraint firstItem="XLM-WK-ocK" firstAttribute="top" secondItem="0D6-Dt-kb7" secondAttribute="bottom" constant="48" id="fXY-m1-TzG"/>
+                    <constraint firstItem="PT6-a8-dNU" firstAttribute="centerX" secondItem="eOf-nl-XuA" secondAttribute="centerX" id="iA7-A0-udZ"/>
+                    <constraint firstItem="0D6-Dt-kb7" firstAttribute="top" secondItem="EeK-iZ-zf4" secondAttribute="top" constant="12" id="meG-ym-wUG"/>
+                    <constraint firstAttribute="bottom" secondItem="OI5-LA-lXx" secondAttribute="bottom" id="pVG-XY-VLR"/>
+                    <constraint firstAttribute="trailing" secondItem="XLM-WK-ocK" secondAttribute="trailing" constant="10" id="zGd-UV-G8o"/>
+                </constraints>
+            </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="3"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="bottomLineView" destination="OI5-LA-lXx" id="oAO-6i-XZq"/>
+                <outlet property="contentImage" destination="kRW-Zh-KgD" id="Pb1-cC-AqG"/>
+                <outlet property="contentImageHeight" destination="WGh-lQ-z8A" id="uF3-ZS-gLi"/>
+                <outlet property="contentImageToTimeVS" destination="CWW-RR-Azo" id="l3N-NJ-KgB"/>
+                <outlet property="contentImageWidth" destination="oPi-CN-lrW" id="Uu7-Ks-CiL"/>
+                <outlet property="contentLabel" destination="XLM-WK-ocK" id="4s7-pP-M6I"/>
+                <outlet property="contentLabelHeight" destination="b4G-bg-5uq" id="7MI-Y4-7xc"/>
+                <outlet property="contentToTimeVS" destination="fXY-m1-TzG" id="OpZ-iY-7Fe"/>
+                <outlet property="timeLabel" destination="0D6-Dt-kb7" id="hka-Tq-gor"/>
+                <outlet property="timeLineDown" destination="eOf-nl-XuA" id="LHI-cs-vDE"/>
+                <outlet property="timeLineUp" destination="itd-W5-VLy" id="tgX-bW-VfC"/>
+                <outlet property="typeImage" destination="8XY-K4-kkU" id="sP4-d0-Rfd"/>
+            </connections>
+            <point key="canvasLocation" x="207" y="303.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="我的聊股_发表小图标.png" width="40" height="32"/>
+    </resources>
+</document>

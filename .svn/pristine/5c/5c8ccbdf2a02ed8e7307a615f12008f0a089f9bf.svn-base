@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="HomePageTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomePageCellID" rowHeight="131" id="KGk-i7-Jjw" customClass="HomePageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="280"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="319" height="279"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" id="eJX-uj-EED" userLabel="bottomSplitLine" customClass="CellBottomLinesView">
+                        <rect key="frame" x="0.0" y="280" width="320" height="1"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <view contentMode="scaleToFill" id="x7Y-qA-WO8" userLabel="timeLineUp">
+                        <rect key="frame" x="20" y="0.0" width="1" height="10"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <view contentMode="scaleToFill" id="fCw-wd-bAZ" userLabel="timeLineDown">
+                        <rect key="frame" x="20" y="47" width="1" height="10"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ndI-6n-ncw" userLabel="ctimeLabel">
+                        <rect key="frame" x="46" y="30" width="109" height="11"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.3529411764705882" green="0.3529411764705882" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="聊股回复框小图标.png" id="IJF-GP-ip6" userLabel="arrowImgView">
+                        <rect key="frame" x="52" y="121" width="12" height="7"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" id="Bkx-zA-NxD" userLabel="replayBox" customClass="UIImageView">
+                        <rect key="frame" x="43" y="128" width="270" height="96"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="v5o-hz-mMI" userLabel="weiBoReplayView" customClass="FTCoreTextView">
+                                <rect key="frame" x="5" y="0.0" width="260" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="xdU-xr-Ecg" userLabel="replayImgs" customClass="WBImageView">
+                                <rect key="frame" x="5" y="52" width="59" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <view contentMode="scaleToFill" id="g6w-Za-1LR" userLabel="placeButtonView">
+                        <rect key="frame" x="0.0" y="250" width="320" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="7303" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="Xeh-Ha-5kd" userLabel="shareBtn">
+                                <rect key="frame" x="35" y="0.0" width="60" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                <inset key="imageEdgeInsets" minX="13" minY="7" maxX="30" maxY="8"/>
+                                <state key="normal" title="分享" image="分享小图标.png">
+                                    <color key="titleColor" red="0.031372549020000001" green="0.42745098040000001" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5Xm-ds-10U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7300" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="njU-nw-bvE" userLabel="buyBtn">
+                                <rect key="frame" x="130" y="0.0" width="60" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                <inset key="imageEdgeInsets" minX="13" minY="7" maxX="30" maxY="8"/>
+                                <state key="normal" title="评论" image="评论小图标1.png">
+                                    <color key="titleColor" red="0.031372549020000001" green="0.42745098040000001" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kxu-ie-Hge"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7301" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="aTY-6v-3O6" userLabel="sellBtn">
+                                <rect key="frame" x="225" y="0.0" width="60" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                <inset key="imageEdgeInsets" minX="13" minY="7" maxX="30" maxY="8"/>
+                                <state key="normal" title="赞" image="赞小图标_up.png">
+                                    <color key="titleColor" red="0.031372549020000001" green="0.42745098040000001" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sellBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4ML-2E-DwK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="BSD-gz-ySe" userLabel="weiboImgs" customClass="WBImageView">
+                        <rect key="frame" x="43" y="74" width="59" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <accessibility key="accessibilityConfiguration" label=""/>
+                    </imageView>
+                    <view contentMode="scaleToFill" id="d4B-Lx-VHf" userLabel="weiBoContentView" customClass="FTCoreTextView">
+                        <rect key="frame" x="46" y="53" width="268" height="13"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" id="p3J-Oz-5h2" userLabel="titleVIew" customClass="FTCoreTextView">
+                        <rect key="frame" x="46" y="33" width="268" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" id="CWb-8V-U6t" userLabel="userNameView" customClass="UserGradeView">
+                        <rect key="frame" x="46" y="8" width="230" height="12"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" id="uZu-87-NFT" customClass="RoundHeadImage">
+                        <rect key="frame" x="2" y="10" width="37" height="37"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="arrowImgView" destination="IJF-GP-ip6" id="f7b-tg-IcE"/>
+                <outlet property="bottomSplitView" destination="eJX-uj-EED" id="KS5-EE-Faa"/>
+                <outlet property="buyBtn" destination="njU-nw-bvE" id="ZxO-Fa-veR"/>
+                <outlet property="ctimeLabel" destination="ndI-6n-ncw" id="2PO-e1-Jyj"/>
+                <outlet property="headImageView" destination="uZu-87-NFT" id="vgD-Ur-WRX"/>
+                <outlet property="placeButtonView" destination="g6w-Za-1LR" id="LNZ-bb-4re"/>
+                <outlet property="replayBox" destination="Bkx-zA-NxD" id="aDM-iM-NFp"/>
+                <outlet property="replayImgs" destination="xdU-xr-Ecg" id="Yxw-Cd-3MD"/>
+                <outlet property="sellBtn" destination="aTY-6v-3O6" id="jog-wL-sTG"/>
+                <outlet property="shareBtn" destination="Xeh-Ha-5kd" id="eHP-Su-LEb"/>
+                <outlet property="titleView" destination="p3J-Oz-5h2" id="bRK-Dw-Bqb"/>
+                <outlet property="userNameView" destination="CWb-8V-U6t" id="lJ5-Bx-pSX"/>
+                <outlet property="verticalLineDown" destination="fCw-wd-bAZ" id="FJB-qm-dPo"/>
+                <outlet property="verticalLineUp" destination="x7Y-qA-WO8" id="4eZ-c2-8di"/>
+                <outlet property="weiBoContentView" destination="d4B-Lx-VHf" id="g3D-cP-BLZ"/>
+                <outlet property="weiBoReplayView" destination="v5o-hz-mMI" id="HFG-0T-i8E"/>
+                <outlet property="weiboImgs" destination="BSD-gz-ySe" id="bDE-Z1-wbV"/>
+            </connections>
+            <point key="canvasLocation" x="195.5" y="293"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="分享小图标.png" width="34" height="26"/>
+        <image name="聊股回复框小图标.png" width="12" height="6"/>
+        <image name="评论小图标1.png" width="34" height="26"/>
+        <image name="赞小图标_up.png" width="34" height="26"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

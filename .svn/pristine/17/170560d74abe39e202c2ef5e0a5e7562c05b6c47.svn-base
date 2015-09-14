@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WarningLineView" id="Sem-sz-hIp" customClass="WarningLineView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="31"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sem-sz-hIp" id="btM-bG-5kl">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="警戒线" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnR-LH-hWc" userLabel="警戒线标题">
+                                <rect key="frame" x="28" y="9" width="37" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="37" id="4ol-L1-LEg"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="9s8-fP-FfG"/>
+                                    <constraint firstAttribute="height" constant="13" id="ILS-Hd-qUC"/>
+                                    <constraint firstAttribute="width" constant="37" id="lWN-va-0G2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.87450980389999999" green="0.18823529410000001" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4ol-L1-LEg"/>
+                                        <exclude reference="9s8-fP-FfG"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="警戒线小图标.png" translatesAutoresizingMaskIntoConstraints="NO" id="JQl-SQ-dyH" userLabel="警戒线图标">
+                                <rect key="frame" x="15" y="9" width="12" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="60R-8s-vfJ"/>
+                                    <constraint firstAttribute="height" constant="12" id="6nI-n6-zw2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="12" id="j13-jB-YDX"/>
+                                    <constraint firstAttribute="width" constant="12" id="nlS-8J-NXO"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="60R-8s-vfJ"/>
+                                        <exclude reference="j13-jB-YDX"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnN-5Q-Ruk" userLabel="警戒线信息">
+                                <rect key="frame" x="70" y="9" width="90" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="IT4-u6-kWb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="13" id="QH8-WA-fiq"/>
+                                    <constraint firstAttribute="height" constant="13" id="W01-ss-Wxa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QH8-WA-fiq"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="平仓线" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpC-Gr-jSb" userLabel="平仓线标题">
+                                <rect key="frame" x="218" y="9" width="37" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="8Pm-fj-73U"/>
+                                    <constraint firstAttribute="height" constant="13" id="Erc-l1-ILa"/>
+                                    <constraint firstAttribute="height" constant="13" id="IV5-CE-amL"/>
+                                    <constraint firstAttribute="width" constant="37" id="e7y-QY-QVJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.87450980389999999" green="0.18823529410000001" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8Pm-fj-73U"/>
+                                        <exclude reference="Erc-l1-ILa"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="son-jS-xYa" userLabel="平仓线信息">
+                                <rect key="frame" x="261" y="9" width="59" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="13" id="2xj-Cg-Wjh"/>
+                                    <constraint firstAttribute="height" constant="13" id="Qvh-oZ-Mng"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="平仓线小图标.png" translatesAutoresizingMaskIntoConstraints="NO" id="7mg-Jp-bL6" userLabel="平仓线图标">
+                                <rect key="frame" x="205" y="9" width="12" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="7oh-V3-8uY"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="12" id="SmL-DM-4U3"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="W1l-bs-86Y"/>
+                                    <constraint firstAttribute="width" constant="12" id="vOM-hM-k8L"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="SmL-DM-4U3"/>
+                                        <exclude reference="W1l-bs-86Y"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dpC-Gr-jSb" firstAttribute="leading" secondItem="7mg-Jp-bL6" secondAttribute="trailing" constant="1" id="120-3r-HqH"/>
+                            <constraint firstAttribute="trailing" secondItem="son-jS-xYa" secondAttribute="trailing" id="6Q8-RH-yfD"/>
+                            <constraint firstItem="son-jS-xYa" firstAttribute="leading" secondItem="dpC-Gr-jSb" secondAttribute="trailing" constant="5" id="Brj-3V-kIS"/>
+                            <constraint firstItem="dpC-Gr-jSb" firstAttribute="leading" secondItem="7mg-Jp-bL6" secondAttribute="trailing" constant="1" id="DuU-K7-qhY"/>
+                            <constraint firstItem="JQl-SQ-dyH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="FA8-3i-3WO"/>
+                            <constraint firstItem="son-jS-xYa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="J2l-Ze-9YB"/>
+                            <constraint firstItem="son-jS-xYa" firstAttribute="leading" secondItem="dpC-Gr-jSb" secondAttribute="trailing" constant="6" id="LLV-mo-Ldh"/>
+                            <constraint firstItem="dpC-Gr-jSb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="M1J-FN-dqe"/>
+                            <constraint firstItem="7mg-Jp-bL6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="aOv-7I-gqf"/>
+                            <constraint firstItem="wnN-5Q-Ruk" firstAttribute="leading" secondItem="CnR-LH-hWc" secondAttribute="trailing" constant="5" id="b9W-gD-ysA"/>
+                            <constraint firstItem="CnR-LH-hWc" firstAttribute="leading" secondItem="JQl-SQ-dyH" secondAttribute="trailing" constant="1" id="eyV-bZ-HDI"/>
+                            <constraint firstItem="CnR-LH-hWc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="frd-w6-kwF"/>
+                            <constraint firstItem="JQl-SQ-dyH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="lkF-0H-26o"/>
+                            <constraint firstItem="wnN-5Q-Ruk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="rPF-h5-27K"/>
+                            <constraint firstItem="7mg-Jp-bL6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="205" id="y3h-aX-zEN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="120-3r-HqH"/>
+                                <exclude reference="Brj-3V-kIS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YkE-wZ-DOK" customClass="DayAndMoneyView">
+                        <rect key="frame" x="0.0" y="29" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Tic-I2-8uc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YkE-wZ-DOK" firstAttribute="leading" secondItem="btM-bG-5kl" secondAttribute="leading" id="0QZ-tX-a42"/>
+                    <constraint firstItem="iN0-l3-epB" firstAttribute="top" secondItem="btM-bG-5kl" secondAttribute="top" id="LQU-gi-YdP"/>
+                    <constraint firstItem="iN0-l3-epB" firstAttribute="leading" secondItem="btM-bG-5kl" secondAttribute="leading" id="RSE-3C-Q7K"/>
+                    <constraint firstAttribute="bottom" secondItem="YkE-wZ-DOK" secondAttribute="bottom" id="asS-NU-tdI"/>
+                    <constraint firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="hxE-Qw-aqE"/>
+                    <constraint firstAttribute="trailing" secondItem="YkE-wZ-DOK" secondAttribute="trailing" id="qwS-Fp-Rxd"/>
+                    <constraint firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="tHa-RY-mIb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="flatNumber" destination="son-jS-xYa" id="AYz-QW-0AY"/>
+                <outlet property="warningNumber" destination="wnN-5Q-Ruk" id="qI6-Lh-wd2"/>
+            </connections>
+            <point key="canvasLocation" x="515" y="496.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="平仓线小图标.png" width="28" height="28"/>
+        <image name="警戒线小图标.png" width="28" height="28"/>
+    </resources>
+</document>

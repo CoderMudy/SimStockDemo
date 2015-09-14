@@ -1,0 +1,171 @@
+<div class="page" id="account_riskAssessment" data-pageTitle="风险测评">
+   <header>
+    	<!--<a class="back_btn" href="javascript:void(0)"></a>-->
+        <a class="tel_btn" href="javascript:void(0)"></a>
+    	<h2>风险测评</h2>
+    </header>
+    <div class="main">
+    	<div class="step_box"><div style="width:80%;"></div></div>
+        <div class="info_box">请完成风险测评</div> 
+        <dl class="risk_dl" id="dl1">
+        	<dt>1、您的主要收入来源是：</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="1" ans-mark="3" dgansid="A">A.工资、劳务报酬</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="1" ans-mark="2" dgansid="B">B.生产经营所得</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="1" ans-mark="1" dgansid="C">C.利息、股息、转让证券等金融性资产收入</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="1" ans-mark="1" dgansid="D">D.出租、出售房地产等非金融性资产收</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="5" queid="1" ans-mark="0" dgansid="E">E.无固定收入</a></dd>
+        </dl>
+        <dl class="risk_dl" id="dl2" style="display:none">
+        	<dt>2、最近您家庭预计进行证券投资的资金占家庭现有总资产(不含自住、自用房产及汽车等固定资产)的比例是：</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="2" ans-mark="1" dgansid="A">A.70%（含）以上</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="2" ans-mark="3" dgansid="B">B.50%（含）-70% </a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="2" ans-mark="4" dgansid="C">C.30%（含）－50%</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="2" ans-mark="5" dgansid="D">D.10%（含）－30%</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="5" queid="2" ans-mark="6" dgansid="E">E.10%以下</a></dd>
+        </dl>
+        <dl class="risk_dl" id="dl3" style="display:none">
+        	<dt>3、您是否有尚未清偿的数额较大的债务，如有，其性质是：</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="3" ans-mark="3" dgansid="A">A.没有</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="3" ans-mark="2" dgansid="B">B.有，住房抵押贷款等长期定额债务 </a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="3" ans-mark="1" dgansid="C">C.有，信用卡欠款、消费信贷等短期信用债务</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="3" ans-mark="0" dgansid="D">D.有，亲朋之间借款</a></dd>
+        </dl>
+        <dl class="risk_dl" id="dl4" style="display:none">
+        	<dt>4、 您的投资经验可以被概括为：</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="4" ans-mark="1" dgansid="A">A.有限：除银行活期账户和定期存款外，我基本没有其他投资经验</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="4" ans-mark="2" dgansid="B">B.一般：除银行活期账户和定期存款外，我购买过基金、保险等理财产品，但还需要进一步的指导 </a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="4" ans-mark="3" dgansid="C">C.丰富：我是一位有经验的投资者，参与过股票、基金等产品的交易，并倾向于自己做出投资决策</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="4" ans-mark="5" dgansid="D">D.非常丰富：我是一位非常有经验的投资者，参与过权证、期货或创业板等高风险产品的交易</a></dd>
+        </dl>
+        <dl class="risk_dl" id="dl5" style="display:none">
+        	<dt>5、是否有过投资股票、基金或债券的经历？</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="5" ans-mark="1" dgansid="A">A.没有 </a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="5" ans-mark="2" dgansid="B">B.有，少于3年 </a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="5" ans-mark="3" dgansid="C">C.有，3（含）～5年</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="5" ans-mark="4" dgansid="D">D.有，5年（含）以上</a></dd>
+        </dl>
+        <dl class="risk_dl" id="dl6" style="display:none">
+        	<dt>6、您的证券投资知识：</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="6" ans-mark="5" dgansid="A">A.参与过股票、衍生产品交易，经验丰富，具有一定得专业水平</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="6" ans-mark="4" dgansid="B">B.对证券市场有充分认识，懂得一些投资技巧 </a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="6" ans-mark="3" dgansid="C">C.对证券市场比较了解，但不太熟悉投资技巧</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="6" ans-mark="2" dgansid="D">D.对证券市场略有了解，但不懂投资技巧</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="5" queid="6" ans-mark="1" dgansid="E">E.对证券市场不熟悉，缺乏基本的投资知识</a></dd>
+        </dl>
+        <dl class="risk_dl" id="dl7" style="display:none">
+        	<dt>7、过去一年时间内，您购买的不同金融产品（含同一类型的不同金融产品）的数量是：</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="7" ans-mark="1" dgansid="A">A.5个以下</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="7" ans-mark="3" dgansid="B">B.6至10个</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="7" ans-mark="4" dgansid="C">C.11至15个</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="7" ans-mark="5" dgansid="D">D.16个以上</a></dd>
+        </dl>
+        <dl class="risk_dl" id="dl8" style="display:none">
+        	<dt>8、以下金融产品，您投资经验在两年以上的有：</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="8" ans-mark="0" dgansid="A">A.银行存款</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="8" ans-mark="1" dgansid="B">B.债券、货币市场基金、债券型基金或其它固定收益类产品 </a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="8" ans-mark="2" dgansid="C">C.股票、混合型基金、偏股型基金、股票型基金等权益类投资品种</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="8" ans-mark="4" dgansid="D">D.期货、融资融券</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="5" queid="8" ans-mark="6" dgansid="E">E.复杂金融产品或其他产品</a></dd>
+        </dl>
+        <dl class="risk_dl" id="dl9" style="display:none">
+        	<dt>9、您用于证券投资的大部分资金不会用作其它用途的时间段为：</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="9" ans-mark="1" dgansid="A">A.短期——0到1年</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="9" ans-mark="3" dgansid="B">B.中期——1（含）到5年 </a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="9" ans-mark="5" dgansid="C">C.长期——5年（含）以上</a></dd>
+        </dl>
+        <dl class="risk_dl" id="dl10" style="display:none">
+        	<dt>10、您的证券投资资金打算重点投资于以下哪些交易品种？</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="10" ans-mark="2" dgansid="A">A.债券、货币市场基金、债券基金等固定收益类投资品种</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="10" ans-mark="4" dgansid="B">B.股票、混合型基金、偏股型基金、股票型基金等权益类投资品种 </a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="10" ans-mark="5" dgansid="C">C.期货、融资融券</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="10" ans-mark="6" dgansid="D">D.复杂或高风险金融产品</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="5" queid="10" ans-mark="6" dgansid="E">E.其他高风险、收益较快的产品</a></dd>
+        </dl>
+        <dl class="risk_dl" id="dl11" style="display:none">
+        	<dt>11、假设有两种不同的投资：投资A预期获得5%的收益，有可能承担非常小的损失；投资B预期获得20%的收益，但有可能面临25%甚至更高的亏损。您将您的投资资产分配为：</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="11" ans-mark="0" dgansid="A">A.全部投资于A</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="11" ans-mark="1" dgansid="B">B.大部分投资于A</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="11" ans-mark="3" dgansid="C">C.两种投资各一半</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="11" ans-mark="5" dgansid="D">D.大部分投资于B</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="5" queid="11" ans-mark="6" dgansid="E">E.全部投资于B</a></dd>
+        </dl>
+        <dl class="risk_dl" id="dl12" style="display:none">
+        	<dt>12、您会借钱进行一项投资吗（不包括购房）？</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="12" ans-mark="1" dgansid="A">A.决不会</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="12" ans-mark="2" dgansid="B">B.一般不会 </a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="12" ans-mark="3" dgansid="C">C.可以考虑</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="12" ans-mark="4" dgansid="D">D.曾经做过</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="5" queid="12" ans-mark="5" dgansid="E">E.经常如此</a></dd>
+        </dl>
+        <dl class="risk_dl" id="dl13" style="display:none">
+        	<dt>13、您打算将自己的投资回报主要用于：</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="13" ans-mark="6" dgansid="A">A.改善生活</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="13" ans-mark="5" dgansid="B">B.个体生产经营或证券投资以外的投资行为</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="13" ans-mark="4" dgansid="C">C.履行扶养、抚养或赡养义务</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="13" ans-mark="3" dgansid="D">D.本人养老或医疗</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="5" queid="13" ans-mark="1" dgansid="E">E.偿付债务</a></dd>
+        </dl>
+        <dl class="risk_dl" id="dl14" style="display:none">
+        	<dt>14、当您进行投资时，您的首要目标是：</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="14" ans-mark="0" dgansid="A">A.资产保值，我不愿意承担任何投资风险</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="14" ans-mark="2" dgansid="B">B.尽可能保证本金安全，不在乎收益率比较低 </a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="14" ans-mark="3" dgansid="C">C.产生较多的收益，可以承担一定的投资风险</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="14" ans-mark="4" dgansid="D">D.实现资产大幅增长，愿意承担很大的投资风险</a></dd>
+        </dl>
+        <dl class="risk_dl" id="dl15" style="display:none">
+        	<dt>15、您认为自己能承受的最大投资损失是多少？</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="15" ans-mark="0" dgansid="A">A.10%以内</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="15" ans-mark="2" dgansid="B">B.10%（含）-20%</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="15" ans-mark="4" dgansid="C">C.20%（含）-40%</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="15" ans-mark="5" dgansid="D">D.40%（含）以上</a></dd>
+        </dl>
+        <dl class="risk_dl" id="dl16" style="display:none">
+        	<dt>16、以下哪一种类型描述了您现在的投资目的：</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="16" ans-mark="5" dgansid="A">A.注重短期的高投机回报，能承担短期很大的资产价值波动</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="16" ans-mark="4" dgansid="B">B.关心长期的高回报，能够接受短期的资产价值波动 </a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="16" ans-mark="3" dgansid="C">C.倾向于长期的成长，较少关心短期的回报和波动</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="16" ans-mark="2" dgansid="D">D.希望在承担较小风险的情况下，获得波动适度的投资回报</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="5" queid="16" ans-mark="1" dgansid="E">E.希望在确保本金安全的情况下，获得固定的投资回报</a></dd>
+        </dl>
+        <dl class="risk_dl" id="dl17" style="display:none">
+        	<dt>17、进行一项重大投资后，您通常会觉得：</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="17" ans-mark="5" dgansid="A">A.很高兴，对自己的决定很有信心</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="17" ans-mark="4" dgansid="B">B.轻松，基本持乐观态度</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="17" ans-mark="3" dgansid="C">C.略有担心，或基本没什么影响</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="17" ans-mark="2" dgansid="D">D.比较担心，会带来一些困扰</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="5" queid="17" ans-mark="0" dgansid="E">E.会非常担心投资结果，忧心忡忡</a></dd>
+        </dl>
+        <dl class="risk_dl" id="dl18" style="display:none">
+        	<dt>18、您的年龄是：</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="18" ans-mark="5" dgansid="A">A.18-30岁</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="18" ans-mark="7" dgansid="B">B.31-40岁 </a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="18" ans-mark="3" dgansid="C">C.41-50岁</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="18" ans-mark="2" dgansid="D">D.51-60岁</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="5" queid="18" ans-mark="0" dgansid="E">E.超过60岁</a></dd>
+        </dl>
+        <dl class="risk_dl" id="dl19" style="display:none">
+        	<dt>19、您的家庭负担状况：</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="19" ans-mark="5" dgansid="A">A.有充足的经济积累，可以应付所有的支出，没有负担</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="19" ans-mark="4" dgansid="B">B.有一定的经济积累，但有其他方面较大的支出，总体而言，有一定的负担</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="19" ans-mark="3" dgansid="C">C.没有经济积累或经济积累较少，但没有其他负担</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="19" ans-mark="2" dgansid="D">D.没有经济积累或经济积累较少，且有其他方面较大的支出，负担较大</a></dd>
+        </dl>
+        <dl class="risk_dl" id="dl20" style="display:none">
+        	<dt>20、您家庭的就业状况是：</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="20" ans-mark="4" dgansid="A">A.您与配偶均有稳定收入的工作</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="20" ans-mark="3" dgansid="B">B.您与配偶其中一人有稳定收入的工作</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="20" ans-mark="2" dgansid="C">C.您与配偶均没有稳定收入的工作或者已退休</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="20" ans-mark="1" dgansid="D">D.未婚，但有稳定收入的工作</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="5" queid="20" ans-mark="0" dgansid="E">E.未婚，目前暂无稳定收入的工作</a></dd>
+        </dl>
+        <!--
+        <dl class="risk_dl" id="dl21" style="display:none">
+        	<dt>21、您的年均收入为：</dt>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="1" queid="20" ans-mark="4" dgansid="A">A.人民币5万元以下</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="2" queid="20" ans-mark="3" dgansid="B">B.人民币5万——10万元</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="3" queid="20" ans-mark="2" dgansid="C">C.人民币10万——20万元</a></dd>
+            <dd><a class="radio" href="javascript:void(0)" ans-id="4" queid="20" ans-mark="1" dgansid="D">D.人民币20万元以上</a></dd>
+        -->
+        </dl>
+    </div>
+</div>

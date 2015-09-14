@@ -1,0 +1,44 @@
+<div class="page" id="account_setPwd" data-pageTitle="设置密码">
+    <header>
+    	<!--<a class="back_btn" href="javascript:void(0)"></a>-->
+        <a class="tel_btn" href="javascript:void(0)"></a>
+    	<h2>设置密码</h2>
+    </header>
+    <div class="main">
+    	<div class="step_box"><div style="width:80%;"></div></div>
+        <div class="form_box mt30">
+        	<div class="form_item">
+            	<span class="txt_tit">交易密码</span>
+                <input class="com_txt" type="password" pattern="\d*" id="pass1" placeholder="请输入6位数字密码"  value="" readonly="readonly" maxlength="6">
+            </div>
+            <div class="form_item mt20">
+            	<span class="txt_tit">再次输入</span>
+                <input class="com_txt" type="password" pattern="\d*" id="pass2" placeholder="请再次输入交易密码"  value="" readonly="readonly" maxlength="6">
+            </div>
+        </div>
+        <div class="form_box mt30 fundPwd" style="display:none">
+        	<div class="form_item">
+            	<span class="txt_tit">资金密码</span>
+                <input class="com_txt" type="password" pattern="\d*" id="pass3" placeholder="请输入6位数字密码"  value="" readonly="readonly" maxlength="6">
+            </div>
+            <div class="form_item mt20">
+            	<span class="txt_tit">再次输入</span>
+                <input class="com_txt" type="password" pattern="\d*" id="pass4" placeholder="请再次输入资金密码"  value="" readonly="readonly" maxlength="6">
+            </div>
+        </div>
+        <div class="set_pwbox">
+        	<div><a class="chkbox chkbox_ckd" href="javascript:void(0)">资金密码与交易密码相同</a></div>
+            <div class="set_xylist clearfix">
+            	<a href="javascript:void(0)" id="protocolName"></a>
+<!--                <a href="javascript:void(0)">客户须知</a>-->
+<!--                <a href="javascript:void(0)">三方存管协议</a>-->
+<!--                <a href="javascript:void(0)">买者自负承诺函</a>-->
+<!--                <a href="javascript:void(0)">证券交易委托代理协议</a>-->
+<!--                <a href="javascript:void(0)">拓展关系确认书</a>-->
+<!--                <a href="javascript:void(0)">网上开户XXX书</a>-->
+            </div>
+            <div class="" id="checkprotocol"><a class="chkbox chkbox_ckd" href="javascript:void(0)">已阅读并同意以上协议</a></div>
+        </div>
+    </div>
+    <footer><a class="com_btn" href="javascript:void(0)">下一步</a></footer>
+</div>

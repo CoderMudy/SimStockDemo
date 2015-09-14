@@ -1,0 +1,24 @@
+<div class="page" id="account_orderSuccess" data-pageTitle="预约QQ视频认证">
+    <header>
+    	<a class="back_btn" href="javascript:void(0)"></a>
+        <a class="tel_btn" href="javascript:void(0)"></a>
+    	<h2>预约见证</h2>
+    </header>
+    <div class="main">
+    	<div class="step_box"><div style="width:40%;"></div></div>
+        <div class="yy_sucbox">预约成功</div>
+        <div class="yy_sucinfo">
+            <!--
+            <p>我们的工作人员将会在</p>
+           	<p class="info">星期三<span class="ml15">早上9:00-12:00</span></p>
+            <p>与您联系进行视频见证</p> 
+            -->
+        </div>
+        <div class="info_box mt20">请做好以下准备，进入视频见证</div>
+        <div class="sp_zbbox">
+        	<span class="s1">身份证</span>
+            <span class="s2">明亮环境</span>
+        </div>   
+    </div>
+    <footer><img src="images/foot_img.png" width="100%"></footer>
+</div>

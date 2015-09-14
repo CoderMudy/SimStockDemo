@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IntroductionCattleView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="183"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTT-FV-pIC">
+                    <rect key="frame" x="21" y="13" width="3" height="15"/>
+                    <color key="backgroundColor" red="0.031372549019607843" green="0.42745098039215684" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="byf-uZ-khD"/>
+                        <constraint firstAttribute="width" constant="3" id="nIU-xm-Dly"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="介绍" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4N9-FP-qBh">
+                    <rect key="frame" x="37" y="13" width="42" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="7ct-Md-keu"/>
+                        <constraint firstAttribute="width" constant="42" id="UFj-LD-z5u"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72t-HK-bko" customClass="FTCoreTextView">
+                    <rect key="frame" x="21" y="52" width="277" height="111"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.31764705879999999" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="72t-HK-bko" secondAttribute="bottom" constant="20" id="5ae-Ix-Yr4"/>
+                <constraint firstItem="qTT-FV-pIC" firstAttribute="top" secondItem="4N9-FP-qBh" secondAttribute="top" id="D3W-LT-pES"/>
+                <constraint firstItem="4N9-FP-qBh" firstAttribute="leading" secondItem="qTT-FV-pIC" secondAttribute="trailing" constant="13" id="RW5-DJ-byN"/>
+                <constraint firstItem="72t-HK-bko" firstAttribute="top" secondItem="4N9-FP-qBh" secondAttribute="bottom" constant="24" id="eSr-1I-jlt"/>
+                <constraint firstAttribute="trailing" secondItem="72t-HK-bko" secondAttribute="trailing" constant="22" id="fwO-VJ-7tp"/>
+                <constraint firstItem="qTT-FV-pIC" firstAttribute="leading" secondItem="72t-HK-bko" secondAttribute="leading" id="fxR-S6-12c"/>
+                <constraint firstItem="qTT-FV-pIC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="21" id="fxV-fh-Gl7"/>
+                <constraint firstItem="qTT-FV-pIC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="oW2-Lk-UZE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="introductionView" destination="72t-HK-bko" id="Bko-1K-frI"/>
+            </connections>
+            <point key="canvasLocation" x="496" y="346.5"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

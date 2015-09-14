@@ -1,0 +1,119 @@
+<div class="page" id="account_personInfo" data-pageTitle="身份验证-个人信息" >
+	<header>
+    	<a class="back_btn" href="javascript:void(0)"></a>
+        <a class="tel_btn" href="javascript:void(0)"></a>
+    	<h2>身份信息确认</h2>
+    </header>
+    <div class="main">
+    	<div class="step_box"><div style="width:40%;"></div></div>
+        <div class="info_box">请补充并确认您的身份信息</div>
+        <div class="form_box">
+        	<div class="form_item">
+            	<span class="txt_tit">姓   名</span>
+                <input class="com_txt name" type="text"  value="">
+            </div>
+            <div class="form_item mt20">
+            	<span class="txt_tit">身份证号</span>
+                <input class="com_txt idCardNo" value=""  type="text">
+            </div>
+            <div class="form_item mt20" style="display:none">
+            	<span class="txt_tit">签发机关</span>
+                <input class="com_txt signDepartment" value=""  type="text">
+            </div>
+            <div class="form_item mt20">
+            	<span class="txt_tit">证件地址</span>
+                <input class="com_txt idCardAddress" value=""  type="text">
+            </div>
+            <div class="form_item mt20">
+            	<span class="txt_tit">居住地址</span>
+                <input class="com_txt address" value=""  type="text">
+            </div>
+            <div class="form_item mt20" style="display:none">
+            	<span class="txt_tit">起始期限</span>
+                <input class="com_txt idBeginDate" value="" id="idBeginDate" type="text">
+            </div>
+            <div class="form_item mt20" style="display:none">
+            	<span class="txt_tit">结束期限</span>
+                <input class="com_txt idEndDate" value="" type="text" id="idEndDate">
+            </div>
+            <div class="form_item mt20" style="display:none">
+            	<span class="txt_tit">邮编</span>
+                <input class="com_txt zipCode" value="" type="text">
+            </div>
+        </div>
+        <div class="form_box mt10">
+        	<div class="form_item">
+            	<span class="txt_tit">行    业</span>
+                <a class="com_sele selectTrade" href="javascript:void(0)">请选择行业</a>
+            </div>
+            <div class="form_item mt20">
+            	<span class="txt_tit">职    业</span>
+                <a class="com_sele selectOccupation" href="javascript:void(0)">请选择职业</a>
+            </div>
+            <div class="form_item mt20">
+            	<span class="txt_tit">学    历</span>
+                <a class="com_sele selectDegree" href="javascript:void(0)">请选择最高学历</a>
+            </div>
+	    </div>
+        <div class="set_pwbox">
+        	<div><a class="chkbox" href="javascript:void(0)">创业板转签</a></div>
+	        <p class="mt10" style="color:#999;">适合在其他证券公司已开通创业板的客户</p>
+        </div>
+        <div class="form_box create" style="display:none">
+        	<div class="form_item">
+            	<span class="txt_tit">信息渠道</span>
+                <a class="com_sele selectInfoRoad" href="javascript:void(0)">请选择信息接受方式</a>
+            </div>
+            <div class="form_item mt20">
+            	<span class="txt_tit">第二联系人</span>
+                <input class="com_txt concat" type="text" placeholder="请输入联系人姓名" >
+            </div>
+            <div class="form_item mt20">
+            	<span class="txt_tit">联系电话</span>
+                <input class="com_txt mobile" type="tel" maxlength="11" placeholder="请输入电话号码" >
+            </div>
+            <div class="form_item mt20">
+            	<span class="txt_tit">与本人关系</span>
+                <a class="com_sele selectRelation" href="javascript:void(0)">请选择</a>
+            </div>
+        </div>
+    </div>
+    <footer><a class="com_btn" href="javascript:void(0)">下一步</a></footer>
+    <div class="sele_layer">
+        <div class="yyb_tab job" style="display:none;">
+     	 	<h3>请选择职业：</h3>
+         	<div class="sele_list" style="height:305px;">
+        </div>
+	    </div>
+	    <div class="yyb_tab education" style="display:none;">
+	     	 <h3>请选择学历：</h3>
+	         <div class="sele_list" style="height:305px;">
+	         </div>
+	    </div>
+	    <div class="yyb_tab trade" style="display:none;">
+	     	 <h3>请选择行业：</h3>
+	         <div class="sele_list" style="height:305px;">
+	         </div>
+	    </div>
+	    <div class="yyb_tab infoReccept" style="display:none;">
+	     	 <h3>请选择信息接受方式：</h3>
+	         <div class="sele_list" style="height:305px;">
+	         	<a value="0">短信</a>
+	         	<a value="1">电话</a>
+	         	<a value="2">电子邮箱</a>
+	         	<a value="3">财富QQ</a>
+	         	<a value="4">邮寄</a>
+	         </div>
+	    </div>
+	    <div class="yyb_tab relation" style="display:none;">
+	     	 <h3>请选择：</h3>
+	         <div class="sele_list" style="height:305px;">
+		         <a value="0">父母</a>
+		         <a value="1">夫妻</a>
+		         <a value="2">子女</a>
+		         <a value="3">朋友</a>
+		         <a value="4">其他</a>
+	         </div>
+	    </div>
+    </div>
+</div>

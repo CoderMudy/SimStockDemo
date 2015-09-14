@@ -1,0 +1,32 @@
+<div class="page" id="account_msgVerify" data-pageTitle="身份验证-手机验证">
+	<header>
+<!--    <a class="back_btn" href="javascript:void(0)"></a>-->
+        <a class="tel_btn" href="javascript:void(0)"></a>
+    	<h2><a>手机验证</a></h2>
+    </header>
+    <div class="main">
+    	<div class="step_box"><div style="width:20%;"></div></div>
+        <div class="info_box">请输入您当前的手机号码<br>以后可通过手机号直接登录查询、修改资料</div>
+        <div class="form_box">
+        	<div class="form_item">
+            	<span class="txt_tit">手机号码</span>
+                <input class="com_txt phoneNum" type="tel" maxlength="13">
+            </div>
+            <div class="form_item mt20">
+            	<span class="txt_tit">验证码</span>
+                <input class="com_txt mobileCode" type="tel" maxlength="6">
+                <a class="send_yzm getmsg" href="javascript:void(0)">发送验证码</a>
+                <a class="send_yzm time"  href="javascript:void(0)" style="display:none">120秒后重发</a>
+            </div>
+            <div class="form_item" style="display:none">
+            	<span class="txt_tit">客户经理Id</span>
+                <input class="com_txt clientId" type="tel">
+            </div>
+        </div>
+        <div class="cert_notice" style="display:none">
+        	<p>验证码已发出，请留意手机短信</p>
+    	</div>
+        <a class="kh_btn m30_10_0" href="javascript:void(0)">立即开户</a>
+    </div>
+    <footer><img src="images/foot_img.png" width="100%"></footer>
+</div>

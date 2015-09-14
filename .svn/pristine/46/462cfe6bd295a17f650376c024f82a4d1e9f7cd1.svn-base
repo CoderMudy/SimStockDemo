@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MatchCreateViewController">
+            <connections>
+                <outlet property="awardContainerInfoView" destination="ujh-wf-aEn" id="NkS-gs-bwv"/>
+                <outlet property="awardInfoViewHeight" destination="1no-hh-doq" id="WHB-Uk-L5i"/>
+                <outlet property="matchInfoContainerView" destination="QRg-0f-Jbu" id="JbG-j9-QGw"/>
+                <outlet property="matchInfoViewHeight" destination="kVe-sa-UyO" id="iTJ-ig-TLy"/>
+                <outlet property="schoolInfoContainerView" destination="6BQ-fe-C7G" id="4lG-Gq-E2s"/>
+                <outlet property="schoolInfoViewHeight" destination="h1q-EF-oow" id="3Bu-gB-zGk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MatchCreateClientView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="333"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QRg-0f-Jbu">
+                    <rect key="frame" x="0.0" y="11" width="320" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="kVe-sa-UyO"/>
+                    </constraints>
+                </view>
+                <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujh-wf-aEn">
+                    <rect key="frame" x="0.0" y="233" width="320" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="1no-hh-doq"/>
+                    </constraints>
+                </view>
+                <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6BQ-fe-C7G">
+                    <rect key="frame" x="0.0" y="122" width="320" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="h1q-EF-oow"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6BQ-fe-C7G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6sc-R7-HGm"/>
+                <constraint firstAttribute="trailing" secondItem="ujh-wf-aEn" secondAttribute="trailing" id="837-1q-fKO"/>
+                <constraint firstAttribute="trailing" secondItem="6BQ-fe-C7G" secondAttribute="trailing" id="BKr-If-QeU"/>
+                <constraint firstItem="6BQ-fe-C7G" firstAttribute="top" secondItem="QRg-0f-Jbu" secondAttribute="bottom" constant="11" id="DP0-P2-BaU"/>
+                <constraint firstItem="QRg-0f-Jbu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Unh-7V-S60"/>
+                <constraint firstItem="ujh-wf-aEn" firstAttribute="top" secondItem="6BQ-fe-C7G" secondAttribute="bottom" constant="11" id="dOA-Q5-UbZ"/>
+                <constraint firstItem="QRg-0f-Jbu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="g2E-wj-o9T"/>
+                <constraint firstItem="ujh-wf-aEn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gXH-Vv-h9J"/>
+                <constraint firstAttribute="trailing" secondItem="QRg-0f-Jbu" secondAttribute="trailing" id="gze-Dn-xQh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="476" y="366.5"/>
+        </view>
+    </objects>
+</document>

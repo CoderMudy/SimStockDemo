@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="MocModel_1" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14B25" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CollectEntity" representedClassName="CollectEntity" syncable="YES">
+        <attribute name="tid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Favorite" representedClassName="Favorite" syncable="YES">
+        <attribute name="favoriteObjectid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="favoriteObjectType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="favoriteTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MessageTypeUnReadNum" representedClassName="MessageTypeUnReadNum" syncable="YES">
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unReadNum" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="MessageUnReadStatus" representedClassName="MessageUnReadStatus" syncable="YES">
+        <attribute name="msgId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="read" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MyBarsEntity" representedClassName="MyBarsEntity" syncable="YES">
+        <attribute name="barid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MyChatStocks" representedClassName="MyChatStocks" syncable="YES">
+        <attribute name="praise" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tstockid" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="PraiseEntity" representedClassName="PraiseEntity" syncable="YES">
+        <attribute name="tid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="StockFunds" representedClassName="StockFunds" syncable="YES">
+        <attribute name="closeDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="decimalDigits" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="firstType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="marketId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="modifyTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="openDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="pyjc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="secondType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="stockCode" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UploadRequestData" representedClassName="UploadRequestData" syncable="YES">
+        <attribute name="context" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="pathUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CollectEntity" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="Favorite" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="MessageTypeUnReadNum" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="MessageUnReadStatus" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="MyBarsEntity" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="MyChatStocks" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="PraiseEntity" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="StockFunds" positionX="0" positionY="0" width="128" height="210"/>
+        <element name="UploadRequestData" positionX="0" positionY="0" width="128" height="120"/>
+    </elements>
+</model>

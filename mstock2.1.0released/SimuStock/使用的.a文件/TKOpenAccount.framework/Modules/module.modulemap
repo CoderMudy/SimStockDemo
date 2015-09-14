@@ -1,0 +1,6 @@
+framework module TKOpenAccount {
+  umbrella header "TKOpenAccount.h"
+
+  export *
+  module * { export * }
+}

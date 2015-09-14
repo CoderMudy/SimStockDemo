@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroductionCattleView">
+            <connections>
+                <outlet property="introduceHeight" destination="6d1-Wl-oKn" id="xq8-wn-cRj"/>
+                <outlet property="introductionView" destination="cDr-ot-n5A" id="UeS-vh-tTa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="介绍" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QE4-6z-QtV">
+                    <rect key="frame" x="37" y="13" width="42" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="72S-1E-rsS"/>
+                        <constraint firstAttribute="height" constant="15" id="whR-29-5bL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fby-fJ-KyM">
+                    <rect key="frame" x="21" y="13" width="3" height="15"/>
+                    <color key="backgroundColor" red="0.031372549020000001" green="0.42745098040000001" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="3" id="XCB-RU-8de"/>
+                        <constraint firstAttribute="height" constant="15" id="bVl-kD-iA8"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ltb-Y4-cZX" userLabel="line1" customClass="CellBottomLinesView">
+                    <rect key="frame" x="0.0" y="108" width="320" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="tGb-wB-MzB"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDr-ot-n5A" customClass="FTCoreTextView">
+                    <rect key="frame" x="21" y="48" width="278" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6d1-Wl-oKn"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfr-iF-fa8" userLabel="line2" customClass="CellBottomLinesView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="LVS-M5-2ul"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Ltb-Y4-cZX" secondAttribute="bottom" id="29S-IG-A7A"/>
+                <constraint firstAttribute="trailing" secondItem="Ltb-Y4-cZX" secondAttribute="trailing" id="2Qd-EC-76c"/>
+                <constraint firstItem="Ltb-Y4-cZX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5vV-xI-i50"/>
+                <constraint firstAttribute="trailing" secondItem="cDr-ot-n5A" secondAttribute="trailing" constant="21" id="AGY-J1-Z8c"/>
+                <constraint firstItem="fby-fJ-KyM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="AGj-P1-fHm"/>
+                <constraint firstItem="wfr-iF-fa8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NTu-dw-ipc"/>
+                <constraint firstItem="wfr-iF-fa8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bkK-su-B74"/>
+                <constraint firstItem="fby-fJ-KyM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="21" id="hnm-uZ-wD4"/>
+                <constraint firstItem="cDr-ot-n5A" firstAttribute="top" secondItem="QE4-6z-QtV" secondAttribute="bottom" constant="20" id="kTx-H9-cer"/>
+                <constraint firstItem="fby-fJ-KyM" firstAttribute="top" secondItem="QE4-6z-QtV" secondAttribute="top" id="pCi-dX-mqM"/>
+                <constraint firstAttribute="trailing" secondItem="wfr-iF-fa8" secondAttribute="trailing" id="tMw-Ek-gth"/>
+                <constraint firstItem="QE4-6z-QtV" firstAttribute="leading" secondItem="fby-fJ-KyM" secondAttribute="trailing" constant="13" id="z0y-RY-6Q4"/>
+                <constraint firstItem="cDr-ot-n5A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="21" id="zQx-GT-iyw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="529" y="204"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

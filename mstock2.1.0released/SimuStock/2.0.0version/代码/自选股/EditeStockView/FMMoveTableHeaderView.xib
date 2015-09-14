@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="29"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="操作" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofF-Ge-d1C">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分组" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHT-hj-3G3">
+                    <rect key="frame" x="128" y="0.0" width="64" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提醒" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlS-Xp-BFJ">
+                    <rect key="frame" x="192" y="0.0" width="64" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   拖动" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNh-Gz-80u">
+                    <rect key="frame" x="256" y="0.0" width="64" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="股票名称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUZ-uW-gGY">
+                    <rect key="frame" x="64" y="0.0" width="64" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.88235294117647056" green="0.8901960784313725" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BNh-Gz-80u" firstAttribute="width" secondItem="RlS-Xp-BFJ" secondAttribute="width" id="2XL-q0-Cul"/>
+                <constraint firstItem="RlS-Xp-BFJ" firstAttribute="leading" secondItem="eHT-hj-3G3" secondAttribute="trailing" id="30R-vU-YB1"/>
+                <constraint firstItem="BNh-Gz-80u" firstAttribute="width" secondItem="eHT-hj-3G3" secondAttribute="width" id="4Y6-KW-rzj"/>
+                <constraint firstItem="BNh-Gz-80u" firstAttribute="leading" secondItem="RlS-Xp-BFJ" secondAttribute="trailing" id="BJ9-w1-UDm"/>
+                <constraint firstAttribute="bottom" secondItem="BNh-Gz-80u" secondAttribute="bottom" id="Jiq-yI-Qgq"/>
+                <constraint firstItem="BNh-Gz-80u" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="N04-mv-qFW"/>
+                <constraint firstItem="eUZ-uW-gGY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="O35-L8-zLb"/>
+                <constraint firstItem="eHT-hj-3G3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OpN-E4-vwV"/>
+                <constraint firstAttribute="bottom" secondItem="eHT-hj-3G3" secondAttribute="bottom" id="QSu-aa-n8e"/>
+                <constraint firstItem="BNh-Gz-80u" firstAttribute="width" secondItem="eUZ-uW-gGY" secondAttribute="width" id="R1g-Y3-h1w"/>
+                <constraint firstItem="RlS-Xp-BFJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Rec-Ib-pzE"/>
+                <constraint firstItem="eUZ-uW-gGY" firstAttribute="leading" secondItem="ofF-Ge-d1C" secondAttribute="trailing" id="aUn-8w-tzA"/>
+                <constraint firstAttribute="trailing" secondItem="BNh-Gz-80u" secondAttribute="trailing" id="aVe-dp-E6v"/>
+                <constraint firstItem="eHT-hj-3G3" firstAttribute="leading" secondItem="eUZ-uW-gGY" secondAttribute="trailing" id="ax7-s7-f3C"/>
+                <constraint firstAttribute="bottom" secondItem="RlS-Xp-BFJ" secondAttribute="bottom" id="hAr-0E-0q0"/>
+                <constraint firstItem="ofF-Ge-d1C" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jRS-KR-oAm"/>
+                <constraint firstAttribute="bottom" secondItem="eUZ-uW-gGY" secondAttribute="bottom" id="nr8-GS-wdr"/>
+                <constraint firstItem="BNh-Gz-80u" firstAttribute="width" secondItem="ofF-Ge-d1C" secondAttribute="width" id="qbz-Xb-aga"/>
+                <constraint firstItem="ofF-Ge-d1C" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rLV-8a-KUJ"/>
+                <constraint firstAttribute="bottom" secondItem="ofF-Ge-d1C" secondAttribute="bottom" id="zfj-H1-Rld"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="100" y="213.5"/>
+        </view>
+    </objects>
+</document>

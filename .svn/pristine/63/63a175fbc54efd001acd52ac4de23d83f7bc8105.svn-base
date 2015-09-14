@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DayAndMoneyTableViewCell" id="KGk-i7-Jjw" customClass="DayAndMoneyTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="28"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dyc-OC-m4Q">
+                        <rect key="frame" x="0.0" y="1" width="320" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择操盘天数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2K5-HJ-W4k">
+                                <rect key="frame" x="13" y="0.0" width="84" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="Nuh-7L-8mf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(交易日)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OM-Aw-BPf">
+                                <rect key="frame" x="102" y="0.0" width="40" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="7q5-lw-7Ct"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5月15日-5月18日" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsU-t9-5GF">
+                                <rect key="frame" x="142" y="0.0" width="171" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2K5-HJ-W4k" firstAttribute="top" secondItem="Dyc-OC-m4Q" secondAttribute="top" id="0Yx-pV-s9d"/>
+                            <constraint firstItem="6OM-Aw-BPf" firstAttribute="leading" secondItem="2K5-HJ-W4k" secondAttribute="trailing" constant="5" id="2tN-ht-Ag0"/>
+                            <constraint firstItem="2K5-HJ-W4k" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Dyc-OC-m4Q" secondAttribute="leading" constant="13" id="39Z-tr-GLN"/>
+                            <constraint firstItem="xsU-t9-5GF" firstAttribute="leading" secondItem="6OM-Aw-BPf" secondAttribute="trailing" id="3DM-kG-hgw"/>
+                            <constraint firstItem="xsU-t9-5GF" firstAttribute="top" secondItem="Dyc-OC-m4Q" secondAttribute="top" id="4uK-uQ-wzk"/>
+                            <constraint firstItem="2K5-HJ-W4k" firstAttribute="top" secondItem="Dyc-OC-m4Q" secondAttribute="top" id="5Qd-5x-3lm"/>
+                            <constraint firstAttribute="bottom" secondItem="6OM-Aw-BPf" secondAttribute="bottom" id="7La-iX-0Hk"/>
+                            <constraint firstItem="2K5-HJ-W4k" firstAttribute="leading" secondItem="Dyc-OC-m4Q" secondAttribute="leading" constant="13" id="Az3-Ig-Jtg"/>
+                            <constraint firstAttribute="height" constant="25" id="IZn-HZ-FwX"/>
+                            <constraint firstItem="6OM-Aw-BPf" firstAttribute="top" secondItem="Dyc-OC-m4Q" secondAttribute="top" id="QJ0-Dk-AJY"/>
+                            <constraint firstAttribute="trailing" secondItem="xsU-t9-5GF" secondAttribute="trailing" constant="7" id="Qrj-kk-YBI"/>
+                            <constraint firstAttribute="bottom" secondItem="2K5-HJ-W4k" secondAttribute="bottom" id="v34-X9-hYx"/>
+                            <constraint firstAttribute="bottom" secondItem="2K5-HJ-W4k" secondAttribute="bottom" id="vJj-t8-swV"/>
+                            <constraint firstAttribute="bottom" secondItem="xsU-t9-5GF" secondAttribute="bottom" id="vY9-Mw-HdI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0Yx-pV-s9d"/>
+                                <exclude reference="39Z-tr-GLN"/>
+                                <exclude reference="v34-X9-hYx"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uGa-sO-wGo" customClass="DayAndMoneyView">
+                        <rect key="frame" x="0.0" y="26" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="Dyc-OC-m4Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6Wr-iz-K5A"/>
+                    <constraint firstItem="uGa-sO-wGo" firstAttribute="top" secondItem="Dyc-OC-m4Q" secondAttribute="bottom" constant="1" id="6tM-Q3-AvY"/>
+                    <constraint firstAttribute="trailing" secondItem="Dyc-OC-m4Q" secondAttribute="trailing" id="H4x-9f-x3j"/>
+                    <constraint firstItem="uGa-sO-wGo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="26" id="HfN-l9-aaS"/>
+                    <constraint firstAttribute="bottom" secondItem="uGa-sO-wGo" secondAttribute="bottom" id="JhT-CQ-7zi"/>
+                    <constraint firstItem="Dyc-OC-m4Q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="WZJ-vc-haT"/>
+                    <constraint firstAttribute="trailing" secondItem="uGa-sO-wGo" secondAttribute="trailing" id="cDg-mN-UBP"/>
+                    <constraint firstItem="Dyc-OC-m4Q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="nUj-Zy-PS0"/>
+                    <constraint firstItem="Dyc-OC-m4Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oC7-Jc-h85"/>
+                    <constraint firstAttribute="trailing" secondItem="Dyc-OC-m4Q" secondAttribute="trailing" id="smp-9E-gCH"/>
+                    <constraint firstItem="uGa-sO-wGo" firstAttribute="top" secondItem="Dyc-OC-m4Q" secondAttribute="bottom" id="suG-lH-6tt"/>
+                    <constraint firstItem="uGa-sO-wGo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tbU-jx-xo6"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="6Wr-iz-K5A"/>
+                        <exclude reference="nUj-Zy-PS0"/>
+                        <exclude reference="smp-9E-gCH"/>
+                        <exclude reference="6tM-Q3-AvY"/>
+                        <exclude reference="HfN-l9-aaS"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="selectedButtons" destination="uGa-sO-wGo" id="4as-6j-dUi"/>
+                <outlet property="timeLabel" destination="xsU-t9-5GF" id="a3C-fD-ocz"/>
+                <outlet property="titleLabel" destination="2K5-HJ-W4k" id="gXf-Rz-PWo"/>
+                <outlet property="titleLabelsmall" destination="6OM-Aw-BPf" id="D1w-YH-HJ9"/>
+            </connections>
+            <point key="canvasLocation" x="393" y="392"/>
+        </tableViewCell>
+    </objects>
+</document>

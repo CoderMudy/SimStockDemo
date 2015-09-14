@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="WeiboCell" selectionStyle="default" indentationWidth="10" rowHeight="230" id="KGk-i7-Jjw" customClass="WeiboCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" id="sWL-Gb-cxi" userLabel="userGradeView" customClass="UserGradeView">
+                        <rect key="frame" x="62" y="15" width="223" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" id="ai8-ZQ-q7P">
+                        <rect key="frame" x="14" y="7" width="41" height="41"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="V8v-LK-p1Z">
+                                <rect key="frame" x="0.0" y="0.0" width="41" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="headPicButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zN5-il-nkq"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="用户默认头像.png" id="O4G-mZ-IHY">
+                                <rect key="frame" x="2" y="2" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.52941176470588236" green="0.78431372549019607" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C5M-dH-h2Z" userLabel="titleLabel">
+                        <rect key="frame" x="20" y="58" width="288" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="精小图标.png" id="cF6-2d-DXH">
+                        <rect key="frame" x="293" y="15" width="15" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <view autoresizesSubviews="NO" contentMode="scaleToFill" id="QnP-L9-coh" customClass="FTCoreTextView">
+                        <rect key="frame" x="20" y="58" width="288" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </view>
+                    <imageView autoresizesSubviews="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="fHL-di-Ywz" userLabel="WBImageView" customClass="WBImageView">
+                        <rect key="frame" x="20" y="58" width="100" height="50"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <view autoresizesSubviews="NO" contentMode="scaleToFill" id="Frm-en-rE9" userLabel="WBReplyView" customClass="WBReplyView">
+                        <rect key="frame" x="20" y="51" width="279" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </view>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aZQ-yb-2vB" userLabel="timeLabel">
+                        <rect key="frame" x="63" y="34" width="96" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.35294117647058826" green="0.35294117647058826" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view autoresizesSubviews="NO" contentMode="scaleToFill" id="i7C-Xr-zkb">
+                        <rect key="frame" x="0.0" y="74" width="320" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="headTruncation" id="uso-jO-Tb1">
+                                <rect key="frame" x="35" y="0.0" width="60" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                <inset key="imageEdgeInsets" minX="13" minY="7" maxX="30" maxY="8"/>
+                                <state key="normal" title="分享" image="分享小图标.png">
+                                    <color key="titleColor" red="0.031372549019607843" green="0.42745098039215684" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonPressDown.png"/>
+                                <state key="highlighted" image="分享小图标.png" backgroundImage="buttonPressDown.png"/>
+                                <connections>
+                                    <action selector="shareButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="04e-hj-nQR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="headTruncation" id="8kR-iU-3JO">
+                                <rect key="frame" x="130" y="0.0" width="60" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                <inset key="imageEdgeInsets" minX="13" minY="7" maxX="30" maxY="8"/>
+                                <state key="normal" title="评论" image="评论小图标1.png">
+                                    <color key="titleColor" red="0.031372549019607843" green="0.42745098039215684" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonPressDown.png"/>
+                                <state key="highlighted" backgroundImage="buttonPressDown.png"/>
+                                <connections>
+                                    <action selector="commentButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8X0-BO-kHb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="headTruncation" id="B4y-7F-xe9">
+                                <rect key="frame" x="225" y="0.0" width="60" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                <inset key="imageEdgeInsets" minX="13" minY="7" maxX="30" maxY="8"/>
+                                <state key="normal" title="赞" image="赞小图标_up.png">
+                                    <color key="titleColor" red="0.031372549019607843" green="0.42745098039215684" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonPressDown.png"/>
+                                <state key="highlighted" backgroundImage="buttonPressDown.png"/>
+                                <connections>
+                                    <action selector="praiseButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="DTg-7K-4fa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <view contentMode="center" id="QaF-bN-tsv" customClass="FTCoreTextView">
+                        <rect key="frame" x="167" y="34" width="127" height="11"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="barNameView" destination="QaF-bN-tsv" id="GSp-AD-TeE"/>
+                <outlet property="bottomUIView" destination="i7C-Xr-zkb" id="Md3-5e-nUR"/>
+                <outlet property="commentButton" destination="8kR-iU-3JO" id="IvJ-pV-QNp"/>
+                <outlet property="coreTextView" destination="QnP-L9-coh" id="xuQ-kS-rqX"/>
+                <outlet property="ctimeLabel" destination="aZQ-yb-2vB" id="C16-Sy-sSy"/>
+                <outlet property="eliteImageView" destination="cF6-2d-DXH" id="LyS-XS-1Vl"/>
+                <outlet property="headPicBotton" destination="V8v-LK-p1Z" id="LVz-Gb-5vg"/>
+                <outlet property="headPicImageView" destination="O4G-mZ-IHY" id="e3s-He-R8D"/>
+                <outlet property="praiseButton" destination="B4y-7F-xe9" id="9fw-Er-Jpi"/>
+                <outlet property="shareButton" destination="uso-jO-Tb1" id="6UV-9q-m3d"/>
+                <outlet property="titleLabel" destination="C5M-dH-h2Z" id="PuF-av-Vbk"/>
+                <outlet property="userGradeView" destination="sWL-Gb-cxi" id="j9h-pI-klL"/>
+                <outlet property="wbReplyView" destination="Frm-en-rE9" id="jot-3t-Dn5"/>
+                <outlet property="weiboImageView" destination="fHL-di-Ywz" id="9ov-al-5oG"/>
+                <outlet property="whiteUiVIew" destination="ai8-ZQ-q7P" id="3us-5J-hUc"/>
+            </connections>
+            <point key="canvasLocation" x="-4128" y="179"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="buttonPressDown.png" width="200" height="200"/>
+        <image name="分享小图标.png" width="34" height="26"/>
+        <image name="用户默认头像.png" width="34" height="34"/>
+        <image name="精小图标.png" width="30" height="30"/>
+        <image name="评论小图标1.png" width="34" height="26"/>
+        <image name="赞小图标_up.png" width="34" height="26"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExpertScreenViewController">
+            <connections>
+                <outlet property="confirmBtn" destination="TqU-e3-ijW" id="tex-dk-pFf"/>
+                <outlet property="confirmView" destination="iN0-l3-epB" id="Bty-P2-Kic"/>
+                <outlet property="lineViewHeight" destination="m0r-1V-GkN" id="jae-u2-mSa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WgK-SP-TEf" userLabel="分割线View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="m0r-1V-GkN"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqU-e3-ijW" customClass="BGColorUIButton">
+                    <rect key="frame" x="97" y="11" width="180" height="45"/>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.51764705879999995" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="o3Q-s8-avQ"/>
+                        <constraint firstAttribute="height" constant="45" id="qkq-Gm-r58"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="确认">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="22.5"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WgK-SP-TEf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0wG-Pw-zEe"/>
+                <constraint firstAttribute="trailing" secondItem="WgK-SP-TEf" secondAttribute="trailing" id="3Gq-VE-amm"/>
+                <constraint firstAttribute="centerX" secondItem="TqU-e3-ijW" secondAttribute="centerX" id="4IG-e9-3gw"/>
+                <constraint firstAttribute="centerY" secondItem="TqU-e3-ijW" secondAttribute="centerY" id="KVA-7D-ALp"/>
+                <constraint firstItem="WgK-SP-TEf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RU0-6f-UfS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="469.5" y="395"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MatchInitialFundSelectCell">
+            <rect key="frame" x="0.0" y="0.0" width="281" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwI-UN-nBb">
+                        <rect key="frame" x="20" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4UR-ZI-UIk" customClass="CellBottomLinesView">
+                        <rect key="frame" x="0.0" y="42" width="281" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="TP5-HX-jZh"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8q5-13-LEi">
+                        <rect key="frame" x="219" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4UR-ZI-UIk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="U9w-gs-rm7"/>
+                    <constraint firstAttribute="centerY" secondItem="hwI-UN-nBb" secondAttribute="centerY" id="Wv7-h4-M0c"/>
+                    <constraint firstItem="hwI-UN-nBb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="XRD-zb-aYQ"/>
+                    <constraint firstAttribute="trailing" secondItem="8q5-13-LEi" secondAttribute="trailing" constant="20" id="aua-80-DsV"/>
+                    <constraint firstAttribute="centerY" secondItem="8q5-13-LEi" secondAttribute="centerY" id="gPx-dE-zgY"/>
+                    <constraint firstAttribute="trailing" secondItem="4UR-ZI-UIk" secondAttribute="trailing" id="k7P-4Q-lUW"/>
+                    <constraint firstAttribute="bottom" secondItem="4UR-ZI-UIk" secondAttribute="bottom" id="xnC-Ow-MGz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomLineView" destination="4UR-ZI-UIk" id="L9P-JU-9eK"/>
+                <outlet property="coinNumLabel" destination="8q5-13-LEi" id="HIb-Gb-YQO"/>
+                <outlet property="initialFundLabel" destination="hwI-UN-nBb" id="Am7-bE-yG0"/>
+            </connections>
+            <point key="canvasLocation" x="58.5" y="159"/>
+        </tableViewCell>
+    </objects>
+</document>

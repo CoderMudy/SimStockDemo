@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddAwardsView">
+            <connections>
+                <outlet property="line" destination="jCf-7d-M8j" id="UVn-t1-9xc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kv0-E8-EeN">
+                    <rect key="frame" x="106" y="14" width="109" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="fGg-hB-KJp"/>
+                        <constraint firstAttribute="width" constant="109" id="jay-BA-ONS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-5" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-8" minY="1" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="添加奖项" image="addPrcture.png">
+                        <color key="titleColor" red="0.031372549019607843" green="0.42745098039215684" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" white="0.57230681180953979" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" title="添加奖项" image="addPrcture_down.png">
+                        <color key="titleColor" red="0.19215686274509802" green="0.73725490196078436" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted" title="添加奖项" image="addPrcture_down.png">
+                        <color key="titleColor" red="0.19215686274509802" green="0.73725490196078436" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addAwardsButtonUpInside:" destination="-1" eventType="touchUpInside" id="87z-z1-07x"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCf-7d-M8j" customClass="BottomDividingLineView">
+                    <rect key="frame" x="0.0" y="56" width="320" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="U3s-Yd-qsc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="kv0-E8-EeN" secondAttribute="centerX" id="3xx-eh-Spe"/>
+                <constraint firstItem="jCf-7d-M8j" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="E7G-RT-n5b"/>
+                <constraint firstAttribute="bottom" secondItem="jCf-7d-M8j" secondAttribute="bottom" id="GYc-O8-e9B"/>
+                <constraint firstAttribute="centerY" secondItem="kv0-E8-EeN" secondAttribute="centerY" id="Rar-fQ-0Nw"/>
+                <constraint firstAttribute="trailing" secondItem="jCf-7d-M8j" secondAttribute="trailing" id="mUx-W2-Mxd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="504" y="129"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="addPrcture.png" width="20" height="20"/>
+        <image name="addPrcture_down.png" width="20" height="20"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

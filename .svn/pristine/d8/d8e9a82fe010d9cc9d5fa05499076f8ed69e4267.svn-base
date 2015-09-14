@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="37" id="KGk-i7-Jjw" customClass="CompetitionDetailsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fqi-dp-ESm" userLabel="分割线" customClass="CellBottomLinesView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="eA4-rX-ONq"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axU-MH-C0S">
+                        <rect key="frame" x="0.0" y="0.0" width="70" height="36"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="nFX-Lc-G65"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXB-JC-TTt">
+                        <rect key="frame" x="220" y="0.0" width="100" height="35"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="t3P-GL-ZiF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.90588235294117647" green="0.027450980392156862" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gc-B9-5Sc" customClass="UserGradeView">
+                        <rect key="frame" x="76" y="12" width="144" height="14"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fqi-dp-ESm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1Hq-ev-C5S"/>
+                    <constraint firstItem="Fqi-dp-ESm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="5rf-nF-Qvf"/>
+                    <constraint firstItem="1gc-B9-5Sc" firstAttribute="leading" secondItem="axU-MH-C0S" secondAttribute="trailing" constant="6" id="8Rf-jZ-lCh"/>
+                    <constraint firstAttribute="bottom" secondItem="VXB-JC-TTt" secondAttribute="bottom" constant="1" id="BH5-u2-bPY"/>
+                    <constraint firstItem="1gc-B9-5Sc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="BqQ-2A-pqX"/>
+                    <constraint firstItem="VXB-JC-TTt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="DdK-KT-jBa"/>
+                    <constraint firstAttribute="bottom" secondItem="axU-MH-C0S" secondAttribute="bottom" id="I08-Nk-lIL"/>
+                    <constraint firstAttribute="bottom" secondItem="1gc-B9-5Sc" secondAttribute="bottom" constant="10" id="N8e-gg-rT8"/>
+                    <constraint firstAttribute="trailing" secondItem="Fqi-dp-ESm" secondAttribute="trailing" id="YNW-Sq-pDf"/>
+                    <constraint firstAttribute="trailing" secondItem="VXB-JC-TTt" secondAttribute="trailing" id="fsr-hc-hVB"/>
+                    <constraint firstItem="axU-MH-C0S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="g0e-5V-I6j"/>
+                    <constraint firstItem="VXB-JC-TTt" firstAttribute="leading" secondItem="1gc-B9-5Sc" secondAttribute="trailing" id="pXb-nT-a7k"/>
+                    <constraint firstItem="axU-MH-C0S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qzF-vJ-dVL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="profitLabel" destination="VXB-JC-TTt" id="fX3-ev-98l"/>
+                <outlet property="rankNumLab" destination="axU-MH-C0S" id="CxE-I2-J8U"/>
+                <outlet property="topSplitView" destination="Fqi-dp-ESm" id="eOL-Qu-Kzq"/>
+                <outlet property="userGradeView" destination="1gc-B9-5Sc" id="tZr-ni-N4O"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppTitle</key>
+	<string>德邦手机开户</string>
+	<key>CompanyName</key>
+	<string>杭州中焯信息技术股份有限公司</string>
+	<key>SysFromVer</key>
+	<string>1.01.003</string>
+	<key>YYBCode</key>
+	<string>16384</string>
+	<key>CFrom</key>
+	<string>tzt.iphone.kh.yg</string>
+	<key>JiZhongJY</key>
+	<string>0</string>
+	<key>KhUrl</key>
+	<string>dbkh/bootpage.htm</string>
+	<key>KhYyVideoUrl</key>
+	<string>/dbkh/reservation.htm</string>
+	<key>KhYyVideoSuccess</key>
+	<string>/dbkh/fail.htm?state=1</string>
+	<key>KhVideoFail</key>
+	<string>/dbkh/fail.htm?state=3</string>
+	<key>KhCertlicense</key>
+	<string>TmtSMGFBSHpZR1M4TDZ4bS9LMFF3U2VtL1JRMGUxWkNuMHp1Zms1T0FUYmlhN1lNRTNFdDhUbUpUTzlJRWN6d2ZpR1BNeWNnOFZWUHltTW5HVmoyUjBmcDJreTB5V0VyZ3B0NDRDK2lEQVFySTdSSURBOCt3RVduaUlVZGZDRnR4ek9WZDl4d3ZNR1JoYnFFQXJDdGhwMnZWSEFpOW5iTHF4WC9Xd3dsbFhNPXsiaWQiOjEsInR5cGUiOiJ0ZXN0IiwicGxhdGZvcm0iOjMsIm5vdGJlZm9yZSI6IjIwMTMxMTEyIiwibm90YWZ0ZXIiOiIyMDE0MDIxMiJ9</string>
+	<key>ServerList</key>
+	<string>114.80.178.78</string>
+	<key>ServerDefault</key>
+	<string>114.80.178.78</string>
+	<key>JYServerPort</key>
+	<string>7778</string>
+	<key>ZXServerPort</key>
+	<string>7778</string>
+	<key>JhServer</key>
+	<string>kaihu.tebon.com.cn&amp;117.135.145.44</string>
+	<key>JhPort</key>
+	<string>7778</string>
+	<key>JhOpen</key>
+	<string>0</string>
+	<key>VideoServer</key>
+	<string>kaihu.tebon.com.cn</string>
+	<key>VideoPort</key>
+	<string>8906</string>
+</dict>
+</plist>

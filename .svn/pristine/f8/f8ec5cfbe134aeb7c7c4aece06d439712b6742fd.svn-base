@@ -1,0 +1,120 @@
+<div class="page" id="account_selDepartment" data-pageTitle="身份验证-选择营业部">
+	 <header>
+    	<a class="back_btn" href="javascript:void(0)"></a>
+        <a class="tel_btn" href="javascript:void(0)"></a>
+    	<h2>选择营业部</h2>
+    </header>
+    <div class="main">
+    	<div class="step_box"><div style="width:20%;"></div></div>
+        <div class="info_box">请选择您要开户的营业部及服务套餐</div>
+        <div class="form_box">
+        	<div class="form_item">
+            	<span class="txt_tit">营业部</span>
+                <a class="com_sele sel_branch" href="javascript:void(0)">请选择营业部</a>
+            </div>
+            <div class="form_item mt20">
+            	<span class="txt_tit">服务套餐</span>
+                <a class="com_sele sel_serviceMeal" href="javascript:void(0)">请选择服务套餐</a>
+            </div>
+        </div>
+        <div class="yj_box">
+        	<!--<span class="yj_dataspan right"><strong></strong> <em>‰</em></span> -->
+        	 佣金
+        </div>
+    </div>
+    <footer><a class="com_btn" href="javascript:void(0)">下一步</a></footer>
+    <div class="sele_layer" style="display:none;">
+    	<div class="tc_sele" style="display:none;">
+            <h3>选择服务套餐</h3>
+            <div class="sele_list mealList">
+            	<!-- 
+                <a href="javascript:void(0)">快速通道<span>（点击看详情）</span></a>
+                <a href="javascript:void(0)">投资顾问<span>（点击看详情）</span></a>
+                <a href="javascript:void(0)">财富管家<span>（点击看详情）</span></a>
+                 -->
+            </div>
+        </div>
+        <div class="tc_info" style="display:none;">
+        	<h3></h3>
+            <span></span><span></span><br/>
+            <span></span><span></span>
+            <div class="sele_btnbox">
+            	<a class="first" href="javascript:void(0)">选此套餐</a>
+                <a class="backMeal" href="javascript:void(0)">返  回</a>
+            </div>
+        </div>
+        <div class="yyb_tab allArea" style="display:none;">
+        	<h3>请选择区域</h3>
+            <div class="sele_list" style="height:305px;">
+            	<!-- 
+            	<a href="javascript:void(0)">华南地区</a>
+                <a href="javascript:void(0)">华东地区</a>
+                <a href="javascript:void(0)">华北地区</a>
+                <a href="javascript:void(0)">东北地区</a>
+                <a href="javascript:void(0)">东莞地区</a>
+                  -->
+            </div>
+        </div>
+        <div class="yyb_cont dongGuanBranch" style="display:none;">
+        	<h3>请选择营业部（东莞）</h3>
+            <div class="h269" id="cityDiv">
+                <a class="dg_selelk" href="javascript:void(0)">大市区</a>
+                <div class="dg_seleright">
+                    <div class="yyb_list cityBranch" style="height:268px;">
+                    	<!-- 
+                        <a href="javascript:void(0)">莞太路证券营业部</a>
+                        <a href="javascript:void(0)">东城大道证券营业部</a>
+                        <a href="javascript:void(0)">第一国际证券营业部</a>
+                        <a href="javascript:void(0)">运河西路证券营业部</a>
+                        <a href="javascript:void(0)">东泰证券营业部</a>
+                        <a href="javascript:void(0)">东城证券营业部</a>
+                        <a href="javascript:void(0)">第一国际证券营业部</a>
+                        <a href="javascript:void(0)">运河西路证券营业部</a>
+                        <a href="javascript:void(0)">东泰证券营业部</a>
+                        <a href="javascript:void(0)">东城证券营业部</a>
+                         -->
+                    </div>
+                </div>
+            </div>
+            <div class="h36" id="townshipDiv">
+                <a class="dg_selelk" href="javascript:void(0)">镇区</a>
+                <div class="dg_seleright">
+                    <div class="yyb_list townshipBranch">
+                    	<!-- 
+                        <a href="javascript:void(0)">莞太路证券营业部</a>
+                        <a href="javascript:void(0)">东城大道证券营业部</a>
+                        <a href="javascript:void(0)">第一国际证券营业部</a>
+                        <a href="javascript:void(0)">运河西路证券营业部</a>
+                        <a href="javascript:void(0)">东泰证券营业部</a>
+                        <a href="javascript:void(0)">东城证券营业部</a>
+                        <a href="javascript:void(0)">东城大道证券营业部</a>
+                        <a href="javascript:void(0)">第一国际证券营业部</a>
+                        <a href="javascript:void(0)">运河西路证券营业部</a>
+                        <a href="javascript:void(0)">东泰证券营业部</a>
+                        <a href="javascript:void(0)">东城证券营业部</a>
+                         -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yyb_cont otherAreaBranch" style="display:none;">
+        	<h3></h3>
+            <div class="yyb_list" style="height:305px;">
+            	<!--  
+            	<a href="javascript:void(0)">珠海九洲大道证券营业部</a>
+                <a href="javascript:void(0)">清远连江路证券营业部</a>
+                <a href="javascript:void(0)">韶关新华南路证券营业部</a>
+                <a href="javascript:void(0)">潮州潮州大道证券营业部</a>
+                <a href="javascript:void(0)">梅州彬芳大道证券营业部</a>
+                <a href="javascript:void(0)">中山三乡证券营业部</a>
+                <a href="javascript:void(0)">阳江西平路证券营业部</a>
+                <a href="javascript:void(0)">韶关新华南路证券营业部</a>
+                <a href="javascript:void(0)">潮州潮州大道证券营业部</a>
+                <a href="javascript:void(0)">梅州彬芳大道证券营业部</a>
+                <a href="javascript:void(0)">中山三乡证券营业部</a>
+                <a href="javascript:void(0)">阳江西平路证券营业部</a>
+                -->
+            </div>
+        </div>
+    </div>
+</div>

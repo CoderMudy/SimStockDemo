@@ -1,0 +1,41 @@
+<div class="page" id="account_openConfirm" data-pageTitle="问卷回访">
+	<header>
+    	<!--<a class="back_btn" href="javascript:void(0)"></a>-->
+        <a class="tel_btn" href="javascript:void(0)"></a>
+    	<h2>回访问卷</h2>
+    </header>
+    <div class="main">
+    	<div class="step_box"><div style="width:80%;"></div></div>
+ 		<div class="hf_wjlist">
+        	<dl class="current">
+            	<dt>1、请问您是否本人自愿通过手机开立账户？</dt>
+                <dd>
+                	<span class="radio" ans-id="A">是</span>
+                    <span class="radio" ans-id="B">否</span>
+                </dd>
+            </dl>
+            <dl>
+            	<dt>2、请问您是否已阅读并理解开户协议及风险揭示书相关条款？</dt>
+                <dd>
+                	<span class="radio" ans-id="A">是</span>
+                    <span class="radio" ans-id="B">否</span>
+                </dd>
+            </dl>
+            <dl>
+            	<dt>3、请问开户协议是否由您本人在手机上签署？</dt>
+                <dd>
+                	<span class="radio" ans-id="A">是</span>
+                    <span class="radio" ans-id="B">否</span>
+                </dd>
+            </dl>
+            <dl>
+            	<dt>4、请问账户密码是否由您本人设置？</dt>
+                <dd>
+                	<span class="radio" ans-id="A">是</span>
+                    <span class="radio" ans-id="B">否</span>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <footer><a class="com_btn" href="javascript:void(0)">提交申请</a></footer>
+</div>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="StockSchoolListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZ7-Ys-0GF" userLabel="round">
+                        <rect key="frame" x="19" y="13" width="10" height="10"/>
+                        <color key="backgroundColor" red="0.031372549019607843" green="0.42745098039215684" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="8I5-Cq-WLG"/>
+                            <constraint firstAttribute="height" constant="10" id="B9n-3T-9xl"/>
+                            <constraint firstAttribute="width" constant="10" id="T8a-G1-KRy"/>
+                            <constraint firstAttribute="width" constant="10" id="ptf-ng-Gl2"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="B9n-3T-9xl"/>
+                                <exclude reference="ptf-ng-Gl2"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="BJl-yR-teV" userLabel="contentTitle">
+                        <rect key="frame" x="42" y="0.0" width="240" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowRight.png" translatesAutoresizingMaskIntoConstraints="NO" id="CgG-2h-P04">
+                        <rect key="frame" x="295" y="10" width="8" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="7Y3-E4-oBA"/>
+                            <constraint firstAttribute="height" constant="16" id="lNk-Rc-Q0h"/>
+                            <constraint firstAttribute="height" constant="16" id="peQ-0j-x9w"/>
+                            <constraint firstAttribute="width" constant="8" id="ya4-sw-dMH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="lNk-Rc-Q0h"/>
+                                <exclude reference="ya4-sw-dMH"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="CgG-2h-P04" firstAttribute="leading" secondItem="BJl-yR-teV" secondAttribute="trailing" constant="13" id="1hS-S4-gav"/>
+                    <constraint firstAttribute="trailing" secondItem="CgG-2h-P04" secondAttribute="trailing" constant="17" id="Gcg-iz-6r4"/>
+                    <constraint firstAttribute="bottom" secondItem="BJl-yR-teV" secondAttribute="bottom" id="JyZ-2f-r7V"/>
+                    <constraint firstAttribute="centerY" secondItem="CgG-2h-P04" secondAttribute="centerY" id="ZbB-rR-J9i"/>
+                    <constraint firstAttribute="centerY" secondItem="gZ7-Ys-0GF" secondAttribute="centerY" id="fVx-IE-OuT"/>
+                    <constraint firstItem="BJl-yR-teV" firstAttribute="leading" secondItem="gZ7-Ys-0GF" secondAttribute="trailing" constant="13" id="qda-nS-G0P"/>
+                    <constraint firstItem="BJl-yR-teV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rt9-eM-nud"/>
+                    <constraint firstItem="gZ7-Ys-0GF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="19" id="w7U-q3-cCl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentTitle" destination="BJl-yR-teV" id="szN-OD-szw"/>
+            </connections>
+            <point key="canvasLocation" x="-82" y="229"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowRight.png" width="8" height="16"/>
+    </resources>
+</document>

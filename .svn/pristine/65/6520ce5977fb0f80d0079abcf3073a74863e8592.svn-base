@@ -1,0 +1,20 @@
+//create by chensj 2011-5-31 12:30
+sqlitePersistentObject的使用说明：
+1，此框架实现的是ORM模式，属于对象级持久化，所以持久化操作都建立在对象上。
+2，支持的对象成员字段都必须实现NSCode，如：
+NSDate,NSString,NSData,NSMutableData,NSNumber与NSObject，或者是int,float等数字，而cString，pointer等不支持。
+
+3，保存对象：
+   1》将新建的model对象继承SQLitePersistentObject。
+   2》［model名 save］；
+
+4，查找：如对象为Person，列名为 iName
+NSArray *people = [Person findByIName:@"'lee%'"];
+  sql查找：
+  Person * leeguoli = [ Person findFirstByCriteria: @"WHERE i_name = 'leeguoli' AND i_age = 20]; 
+  *注意一点，sql中的列名为把字段的［大写字母］转［下滑线＋小写字母］；
+  
+5，此版本为修改后的版本，因为官方爆出的bug还没有提交新版本，所以自行修改，目的是subClass不会在findByCriteria时，
+不会因为读内存出现无法release，而发生 mememry leak。
+
+6,注意：连接默认使用TCP get keep-alive 连接，结果是，如果一个TCp连接的多个请求，某一个发出后服务器没有立即回复ack,则本地队列会再发出第二次，造成重复提交，所以解决办法之一是request.shouldAttemptPersistentConnection = NO。

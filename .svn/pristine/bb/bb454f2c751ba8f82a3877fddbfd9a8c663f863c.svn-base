@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ApplyActualTradingBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9lt-XC-hdw">
+                    <rect key="frame" x="38" y="10" width="244" height="18"/>
+                    <subviews>
+                        <button autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0j4-IU-8je" customClass="BGColorUIButton">
+                            <rect key="frame" x="2" y="1" width="16" height="16"/>
+                            <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="A4J-cH-JTb"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="contentEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                            <connections>
+                                <action selector="clickOnHaveReadBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="sby-84-1XJ"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我已阅读并同意" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZx-az-BGq">
+                            <rect key="frame" x="22" y="1" width="92" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="92" id="1vi-ct-xfD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uns-F5-8Li" customClass="BGColorUIButton">
+                            <rect key="frame" x="114" y="1" width="130" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="《优顾用户配资协议》">
+                                <color key="titleColor" red="0.031372549019607843" green="0.42745098039215684" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickOnProtocolBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="yW0-0i-jI9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Uns-F5-8Li" firstAttribute="top" secondItem="cZx-az-BGq" secondAttribute="top" id="APX-0L-s3B"/>
+                        <constraint firstAttribute="trailing" secondItem="Uns-F5-8Li" secondAttribute="trailing" id="Cae-uw-1qf"/>
+                        <constraint firstItem="Uns-F5-8Li" firstAttribute="baseline" secondItem="cZx-az-BGq" secondAttribute="firstBaseline" id="a1U-xr-Q7m"/>
+                        <constraint firstItem="0j4-IU-8je" firstAttribute="top" secondItem="9lt-XC-hdw" secondAttribute="top" constant="1" id="aIm-Vw-yKI"/>
+                        <constraint firstAttribute="bottom" secondItem="0j4-IU-8je" secondAttribute="bottom" constant="1" id="fGw-Rk-DDt"/>
+                        <constraint firstItem="cZx-az-BGq" firstAttribute="baseline" secondItem="Uns-F5-8Li" secondAttribute="baseline" id="gMv-Ce-Wsz"/>
+                        <constraint firstItem="cZx-az-BGq" firstAttribute="bottom" secondItem="Uns-F5-8Li" secondAttribute="bottom" id="hc8-zL-RSo"/>
+                        <constraint firstItem="Uns-F5-8Li" firstAttribute="leading" secondItem="cZx-az-BGq" secondAttribute="trailing" id="oTG-bc-wuD"/>
+                        <constraint firstItem="0j4-IU-8je" firstAttribute="leading" secondItem="9lt-XC-hdw" secondAttribute="leading" constant="2" id="rao-A4-NDQ"/>
+                        <constraint firstItem="cZx-az-BGq" firstAttribute="leading" secondItem="0j4-IU-8je" secondAttribute="trailing" constant="4" id="vMv-cD-LEh"/>
+                        <constraint firstItem="cZx-az-BGq" firstAttribute="bottom" secondItem="0j4-IU-8je" secondAttribute="bottom" id="vqj-da-Ogi"/>
+                        <constraint firstItem="cZx-az-BGq" firstAttribute="top" secondItem="0j4-IU-8je" secondAttribute="top" id="xCb-RC-6qn"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTS-9a-8QE" customClass="BGColorUIButton">
+                    <rect key="frame" x="73" y="49" width="174" height="40"/>
+                    <color key="backgroundColor" red="0.99215686274509807" green="0.51764705882352946" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Kek-hf-9H2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="立即支付">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="gTS-9a-8QE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="73" id="0GF-uX-T8H"/>
+                <constraint firstItem="9lt-XC-hdw" firstAttribute="centerX" secondItem="gTS-9a-8QE" secondAttribute="centerX" id="2CM-an-e65"/>
+                <constraint firstItem="9lt-XC-hdw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HrE-t4-Joy"/>
+                <constraint firstItem="9lt-XC-hdw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Kdh-9h-0Qz"/>
+                <constraint firstItem="gTS-9a-8QE" firstAttribute="top" secondItem="9lt-XC-hdw" secondAttribute="bottom" constant="21" id="ekH-Bt-Wva"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="haveReadBtn" destination="0j4-IU-8je" id="mh6-jV-v4f"/>
+                <outlet property="payBtn" destination="gTS-9a-8QE" id="cnB-iI-KgR"/>
+                <outlet property="protocolBtn" destination="Uns-F5-8Li" id="fYX-Os-l8f"/>
+            </connections>
+            <point key="canvasLocation" x="454" y="228"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

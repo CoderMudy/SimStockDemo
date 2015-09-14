@@ -1,0 +1,29 @@
+//
+// Prefix header for all source files of the 'SimuStock' target in the 'SimuStock' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "UIViewExt.h"
+    #import "FileHelpers.h"  //文件读写操作公用类
+    #import "SimuConst.h"   //包含常规的字体和颜色
+    #import "NSNull+JSONSupport.h" //NSNull 类型检测
+    #import "UIViewController+RecursiveDescription.h" //打印ViewController的层次
+#endif
+
+//在release版中必须屏蔽掉NSLog (通过Edit scheme -> Run SimuStock.app - Info -> Debug换为Release)
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+#define TICK NSDate *startTime = [NSDate date]
+#define TOCK NSLog(@"Elapsed Time: %f", -[startTime timeIntervalSinceNow])

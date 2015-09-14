@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SuccessApplicantsInformationView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="用户默认头像@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Ci-Fn-cGc">
+                    <rect key="frame" x="49" y="6" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="poe-qm-WSn"/>
+                        <constraint firstAttribute="width" constant="24" id="rXH-Fz-7gG"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="股市大神神经" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrI-97-9IY">
+                    <rect key="frame" x="78" y="0.0" width="72" height="36"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="6Wu-kQ-588"/>
+                        <constraint firstAttribute="height" constant="36" id="rIL-wb-jRS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="6Wu-kQ-588"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="申请" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cck-b7-09J">
+                    <rect key="frame" x="170" y="0.0" width="24" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="WDV-Ib-WnM"/>
+                        <constraint firstAttribute="width" constant="110" id="kUp-Uo-pik"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="kUp-Uo-pik"/>
+                        </mask>
+                    </variation>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5a-2I-wFx">
+                    <rect key="frame" x="160" y="12" width="1" height="12"/>
+                    <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="eHy-Ip-b6M"/>
+                        <constraint firstAttribute="height" constant="12" id="jRk-jK-RnO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="4Ci-Fn-cGc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="0z5-Ow-TEU"/>
+                <constraint firstItem="CrI-97-9IY" firstAttribute="leading" secondItem="4Ci-Fn-cGc" secondAttribute="trailing" constant="5" id="50Q-nz-0DC"/>
+                <constraint firstAttribute="centerY" secondItem="K5a-2I-wFx" secondAttribute="centerY" id="M7s-Av-xoo"/>
+                <constraint firstItem="Cck-b7-09J" firstAttribute="leading" secondItem="K5a-2I-wFx" secondAttribute="trailing" constant="9" id="RiA-pt-1MY"/>
+                <constraint firstItem="CrI-97-9IY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Vb1-M2-fcx"/>
+                <constraint firstAttribute="bottom" secondItem="4Ci-Fn-cGc" secondAttribute="bottom" constant="6" id="d3U-GJ-gxy"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Cck-b7-09J" secondAttribute="trailing" constant="40" id="eFo-xF-5eJ"/>
+                <constraint firstItem="Cck-b7-09J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kUu-6M-kyQ"/>
+                <constraint firstAttribute="centerX" secondItem="K5a-2I-wFx" secondAttribute="centerX" id="nuq-n6-BFO"/>
+                <constraint firstItem="K5a-2I-wFx" firstAttribute="leading" secondItem="CrI-97-9IY" secondAttribute="trailing" constant="10" id="thf-X5-92T"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ApplicantsLabel" destination="Cck-b7-09J" id="0I7-rJ-2Mi"/>
+                <outlet property="UserName" destination="CrI-97-9IY" id="Rrp-vo-kR9"/>
+                <outlet property="imageView" destination="4Ci-Fn-cGc" id="okj-ZQ-QoG"/>
+            </connections>
+            <point key="canvasLocation" x="424" y="205"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="用户默认头像@2x.png" width="90" height="90"/>
+    </resources>
+</document>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tJX-CO-p2m" customClass="SiuSellHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J28-lm-DfZ">
+                    <rect key="frame" x="1" y="0.0" width="318" height="28"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择要卖出的股票" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjr-TM-OsX">
+                            <rect key="frame" x="0.0" y="0.0" width="318" height="28"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Hjr-TM-OsX" firstAttribute="top" secondItem="J28-lm-DfZ" secondAttribute="top" id="Qbi-QZ-hnC"/>
+                        <constraint firstAttribute="bottom" secondItem="Hjr-TM-OsX" secondAttribute="bottom" id="UCh-UU-nBP"/>
+                        <constraint firstItem="Hjr-TM-OsX" firstAttribute="leading" secondItem="J28-lm-DfZ" secondAttribute="leading" id="XaG-Ny-L8q"/>
+                        <constraint firstAttribute="trailing" secondItem="Hjr-TM-OsX" secondAttribute="trailing" id="cP6-xo-1LZ"/>
+                        <constraint firstAttribute="height" constant="28" id="lfv-E7-YyZ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVn-IQ-nfP" userLabel="backGroungWhiteView">
+                    <rect key="frame" x="0.0" y="28" width="320" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="股票名称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fW-mg-NDQ">
+                            <rect key="frame" x="1" y="1" width="106" height="39"/>
+                            <color key="backgroundColor" red="0.88235294117647056" green="0.8901960784313725" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="盈亏率" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1X-ZB-rvC">
+                            <rect key="frame" x="108" y="1" width="105" height="39"/>
+                            <color key="backgroundColor" red="0.88235294117647056" green="0.8901960784313725" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="106" id="L34-RQ-iWz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="L34-RQ-iWz"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可卖股数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZL-Pl-7Oy">
+                            <rect key="frame" x="214" y="1" width="106" height="39"/>
+                            <color key="backgroundColor" red="0.88235294117647056" green="0.8901960784313725" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="8fW-mg-NDQ" firstAttribute="top" secondItem="eVn-IQ-nfP" secondAttribute="top" constant="1" id="08e-Nq-4cD"/>
+                        <constraint firstAttribute="bottom" secondItem="D1X-ZB-rvC" secondAttribute="bottom" id="ER0-jv-oiA"/>
+                        <constraint firstItem="8ZL-Pl-7Oy" firstAttribute="leading" secondItem="D1X-ZB-rvC" secondAttribute="trailing" constant="1" id="FIJ-UN-SSe"/>
+                        <constraint firstAttribute="trailing" secondItem="8ZL-Pl-7Oy" secondAttribute="trailing" constant="1" id="GgR-hX-Vbe"/>
+                        <constraint firstAttribute="bottom" secondItem="8ZL-Pl-7Oy" secondAttribute="bottom" id="MdX-Mo-wTp"/>
+                        <constraint firstItem="D1X-ZB-rvC" firstAttribute="leading" secondItem="8fW-mg-NDQ" secondAttribute="trailing" constant="1" id="N0R-MQ-vSJ"/>
+                        <constraint firstItem="D1X-ZB-rvC" firstAttribute="top" secondItem="eVn-IQ-nfP" secondAttribute="top" constant="1" id="PSG-Is-6Es"/>
+                        <constraint firstItem="8fW-mg-NDQ" firstAttribute="width" secondItem="D1X-ZB-rvC" secondAttribute="width" id="UmZ-SH-Rhj"/>
+                        <constraint firstItem="8fW-mg-NDQ" firstAttribute="leading" secondItem="eVn-IQ-nfP" secondAttribute="leading" constant="1" id="eNQ-43-Twf"/>
+                        <constraint firstAttribute="bottom" secondItem="8fW-mg-NDQ" secondAttribute="bottom" id="hPu-OZ-tWd"/>
+                        <constraint firstItem="8fW-mg-NDQ" firstAttribute="width" secondItem="8ZL-Pl-7Oy" secondAttribute="width" id="iD0-FN-9cf"/>
+                        <constraint firstItem="8ZL-Pl-7Oy" firstAttribute="top" secondItem="eVn-IQ-nfP" secondAttribute="top" constant="1" id="mDH-5A-79L"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="eVn-IQ-nfP" firstAttribute="top" secondItem="J28-lm-DfZ" secondAttribute="bottom" id="AgP-rq-FGB"/>
+                <constraint firstItem="eVn-IQ-nfP" firstAttribute="leading" secondItem="tJX-CO-p2m" secondAttribute="leading" id="IoV-TK-Nzd"/>
+                <constraint firstAttribute="trailing" secondItem="eVn-IQ-nfP" secondAttribute="trailing" id="LSS-cH-T8Y"/>
+                <constraint firstItem="J28-lm-DfZ" firstAttribute="leading" secondItem="tJX-CO-p2m" secondAttribute="leading" constant="1" id="aMT-Rd-DXV"/>
+                <constraint firstAttribute="bottom" secondItem="eVn-IQ-nfP" secondAttribute="bottom" id="eJd-Fr-gBM"/>
+                <constraint firstItem="J28-lm-DfZ" firstAttribute="top" secondItem="tJX-CO-p2m" secondAttribute="top" id="mCI-IZ-A5s"/>
+                <constraint firstAttribute="trailing" secondItem="J28-lm-DfZ" secondAttribute="trailing" constant="1" id="uhP-KC-qgx"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="290" y="283"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="51" id="KGk-i7-Jjw" customClass="VIPPrefectureTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="箭头.png" translatesAutoresizingMaskIntoConstraints="NO" id="SDP-Nr-s2X">
+                        <rect key="frame" x="304" y="19" width="9" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="JVH-ZX-iKC"/>
+                            <constraint firstAttribute="width" constant="9" id="qXU-g7-R9b"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwZ-TV-1VD">
+                        <rect key="frame" x="227" y="11" width="83" height="30"/>
+                        <color key="backgroundColor" red="0.6588235294117647" green="0.35294117647058826" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="N2H-f9-a4A"/>
+                            <constraint firstAttribute="width" constant="83" id="vnE-af-93W"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="成为会员">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="享受高端服务(含基础会员服务)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNc-QX-2IW">
+                        <rect key="frame" x="14" y="27" width="177" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="qRe-X5-ViS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.92156862745098034" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更多会员功能敬请期待" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZd-Ng-Cdi">
+                        <rect key="frame" x="74" y="18" width="172" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="172" id="OZ0-xv-nfR"/>
+                            <constraint firstAttribute="height" constant="15" id="wab-AL-snt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="VIPPrefectureTableViewCell" text="精选牛人交易" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNy-ZS-mew">
+                        <rect key="frame" x="14" y="16" width="201" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="201" id="BzR-c9-YML"/>
+                            <constraint firstAttribute="width" constant="201" id="YSj-yg-4zz"/>
+                            <constraint firstAttribute="height" constant="21" id="oYT-N3-X4E"/>
+                            <constraint firstAttribute="height" constant="18" id="xLn-a6-TGY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="YSj-yg-4zz"/>
+                                <exclude reference="oYT-N3-X4E"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击高级VIP会员标识" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBu-ma-FR4">
+                        <rect key="frame" x="14" y="8" width="153" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="jKc-Ib-GAg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qwv-Nr-GkI" userLabel="底部分割线" customClass="HorizontalSeperatorLine">
+                        <rect key="frame" x="0.0" y="49" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="FKm-ZQ-Wal"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bBu-ma-FR4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="0Aa-wu-K8F"/>
+                    <constraint firstAttribute="trailing" secondItem="Qwv-Nr-GkI" secondAttribute="trailing" id="7qK-7e-23q"/>
+                    <constraint firstItem="yNy-ZS-mew" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="CN0-q3-Wa3"/>
+                    <constraint firstAttribute="trailing" secondItem="SDP-Nr-s2X" secondAttribute="trailing" constant="7" id="Fva-Oz-UdO"/>
+                    <constraint firstItem="yNy-ZS-mew" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="G9Y-0z-3DX"/>
+                    <constraint firstItem="SDP-Nr-s2X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="P7S-Qn-b7u"/>
+                    <constraint firstAttribute="centerY" secondItem="hZd-Ng-Cdi" secondAttribute="centerY" id="Qvx-Ui-EVS"/>
+                    <constraint firstItem="Qwv-Nr-GkI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Sk6-pe-TOQ"/>
+                    <constraint firstItem="bBu-ma-FR4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="WYX-RM-LAa"/>
+                    <constraint firstAttribute="trailing" secondItem="pwZ-TV-1VD" secondAttribute="trailing" constant="10" id="d7L-R0-8EH"/>
+                    <constraint firstAttribute="bottom" secondItem="Qwv-Nr-GkI" secondAttribute="bottom" id="fZo-5A-rQG"/>
+                    <constraint firstItem="Qwv-Nr-GkI" firstAttribute="top" secondItem="hNc-QX-2IW" secondAttribute="bottom" constant="8" id="gkR-Fl-UkG"/>
+                    <constraint firstItem="pwZ-TV-1VD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="mRI-RX-qhX"/>
+                    <constraint firstItem="yNy-ZS-mew" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="shg-tX-F7n"/>
+                    <constraint firstItem="hNc-QX-2IW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="29" id="t9M-TG-hLc"/>
+                    <constraint firstItem="yNy-ZS-mew" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="uST-bP-J3S"/>
+                    <constraint firstItem="hNc-QX-2IW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="uTm-rF-S9k"/>
+                    <constraint firstAttribute="centerX" secondItem="hZd-Ng-Cdi" secondAttribute="centerX" id="wxe-Hl-KNW"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="shg-tX-F7n"/>
+                        <exclude reference="uST-bP-J3S"/>
+                        <exclude reference="t9M-TG-hLc"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="arrowImageView" destination="SDP-Nr-s2X" id="bCa-vr-fZH"/>
+                <outlet property="bottomSeparator" destination="Qwv-Nr-GkI" id="bgR-C0-EYr"/>
+                <outlet property="clickVIPPrefectureName" destination="bBu-ma-FR4" id="MTh-kj-04i"/>
+                <outlet property="memeberBtn" destination="pwZ-TV-1VD" id="S9h-KO-VsU"/>
+                <outlet property="serviceLabel" destination="hNc-QX-2IW" id="gxs-rv-dFI"/>
+                <outlet property="userRemindCellLabel" destination="hZd-Ng-Cdi" id="wN8-qh-Qb3"/>
+                <outlet property="vipPrefectureName" destination="yNy-ZS-mew" id="k5Y-u4-jCn"/>
+            </connections>
+            <point key="canvasLocation" x="274" y="390.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="箭头.png" width="16" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,8 @@
+﻿<div class="page home" id="business_index" data-pageTitle="手机开户2.0">
+	<ul class="yd_list">
+    	<li style="display:none;"><img src="images/yd_01.jpg" width="100%"></li>
+        <li style="display:none;"><img src="images/yd_02.jpg" width="100%"></li>
+        <li><img src="images/yd_03.jpg" width="100%"><a class="yd_khbtn open" href="javascript:void(0)">立即开户</a></li>
+    </ul>
+</div>
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="NewGroupsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBs-tW-RUV" userLabel="modifyButton">
+                        <rect key="frame" x="145" y="2" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="Qhb-9u-pK9"/>
+                            <constraint firstAttribute="height" constant="45" id="gel-tj-ScK"/>
+                        </constraints>
+                        <state key="normal" image="renameGroup.png"/>
+                        <state key="highlighted" backgroundImage="renameGroupDown.png"/>
+                        <connections>
+                            <action selector="editBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xK4-Xu-PmB"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="sC3-lA-AI3">
+                        <rect key="frame" x="28" y="0.0" width="115" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="115" id="ekU-MI-rjR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBi-bt-NvT" userLabel="分割线">
+                        <rect key="frame" x="-40" y="48" width="400" height="1"/>
+                        <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="r6d-Lv-Kmb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="sC3-lA-AI3" secondAttribute="centerY" id="1Yt-0i-JUJ"/>
+                    <constraint firstAttribute="bottom" secondItem="ZBi-bt-NvT" secondAttribute="bottom" id="Br4-LR-JKB"/>
+                    <constraint firstItem="sC3-lA-AI3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="R1g-Kd-uH4"/>
+                    <constraint firstAttribute="trailing" secondItem="ZBi-bt-NvT" secondAttribute="trailing" constant="-40" id="a9l-Hq-fKo"/>
+                    <constraint firstItem="sC3-lA-AI3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="dNz-ff-NuM"/>
+                    <constraint firstItem="OBs-tW-RUV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="137" id="dpt-eq-woy"/>
+                    <constraint firstItem="ZBi-bt-NvT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="-40" id="hig-Hg-QvF"/>
+                    <constraint firstAttribute="centerY" secondItem="OBs-tW-RUV" secondAttribute="centerY" id="mwx-nS-nk8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="groupNameLabel" destination="sC3-lA-AI3" id="S5i-ZO-Bo3"/>
+                <outlet property="modifyButton" destination="OBs-tW-RUV" id="19h-xu-PET"/>
+            </connections>
+            <point key="canvasLocation" x="-68" y="291"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="renameGroup.png" width="22" height="22"/>
+        <image name="renameGroupDown.png" width="22" height="22"/>
+    </resources>
+</document>

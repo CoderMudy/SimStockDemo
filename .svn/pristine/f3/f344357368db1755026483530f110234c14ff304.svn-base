@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>ChangID</key>
+		<string>1</string>
+		<key>Name</key>
+		<string>要闻</string>
+	</dict>
+	<dict>
+		<key>ChangID</key>
+		<string>2</string>
+		<key>Name</key>
+		<string>今日提示</string>
+	</dict>
+	<dict>
+		<key>ChangID</key>
+		<string>3</string>
+		<key>Name</key>
+		<string>个股点评</string>
+	</dict>
+	<dict>
+		<key>ChangID</key>
+		<string>4</string>
+		<key>Name</key>
+		<string>股市直播</string>
+	</dict>
+	<dict>
+		<key>ChangID</key>
+		<string>5</string>
+		<key>Name</key>
+		<string>股市研究</string>
+	</dict>
+	<dict>
+		<key>ChangID</key>
+		<string>6</string>
+		<key>Name</key>
+		<string>公司新闻</string>
+	</dict>
+	<dict>
+		<key>ChangID</key>
+		<string>7</string>
+		<key>Name</key>
+		<string>股票统计</string>
+	</dict>
+	<dict>
+		<key>ChangID</key>
+		<string>8</string>
+		<key>Name</key>
+		<string>行业分析</string>
+	</dict>
+	<dict>
+		<key>ChangID</key>
+		<string>9</string>
+		<key>Name</key>
+		<string>国际财经</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,63 @@
+//
+//  TopAndBottomAlignmentLabel.m
+//  SimuStock
+//
+//  Created by Yuemeng on 14-9-28.
+//  Copyright (c) 2014年 Mac. All rights reserved.
+//
+
+#import "TopAndBottomAlignmentLabel.h"
+
+@implementation TopAndBottomAlignmentLabel
+
+- (id)initWithFrame:(CGRect)frame {
+  self = [super initWithFrame:frame];
+  if (self) {
+    // Initialization code
+    self.verticalAlignment = VerticalAlignmentMiddle;
+  }
+  return self;
+}
+
+- (void)setVerticalAlignment:(VerticalAlignment)verticalAlignment {
+  _verticalAlignment = verticalAlignment;
+  [self setNeedsDisplay];
+}
+
+- (CGRect)textRectForBounds:(CGRect)bounds
+     limitedToNumberOfLines:(NSInteger)numberOfLines {
+  CGRect textRect =
+      [super textRectForBounds:bounds limitedToNumberOfLines:numberOfLines];
+  switch (self.verticalAlignment) {
+    case VerticalAlignmentTop:
+      textRect.origin.y = bounds.origin.y;
+      break;
+    case VerticalAlignmentBottom:
+      textRect.origin.y =
+          bounds.origin.y + bounds.size.height - textRect.size.height;
+      break;
+    case VerticalAlignmentMiddle:
+    // Fall through.
+    default:
+      textRect.origin.y =
+          bounds.origin.y + (bounds.size.height - textRect.size.height) / 2.0;
+  }
+  return textRect;
+}
+
+- (void)drawTextInRect:(CGRect)requestedRect {
+  CGRect actualRect = [self textRectForBounds:requestedRect
+                       limitedToNumberOfLines:self.numberOfLines];
+  [super drawTextInRect:actualRect];
+}
+
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect
+{
+    // Drawing code
+}
+*/
+
+@end

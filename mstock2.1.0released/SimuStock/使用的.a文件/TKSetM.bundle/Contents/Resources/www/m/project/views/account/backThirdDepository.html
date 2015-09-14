@@ -1,0 +1,45 @@
+<div class="page" id="account_backThirdDepository" data-pageTitle="驳回三方存管">
+	<header class="header">
+    	<h3>开户进度</h3>
+    </header>
+	<section class="main">
+        <div class="error_notice">
+        	<h5>您的三方存管银行签约失败！</h5>
+			<p>失败原因：银行卡号不存在，请重新指定三方存管理银行</p>
+        </div>
+        <div class="user_form">
+        	<div class="input_form circular">
+            	<div class="input_text">
+                	<span>选择银行</span><strong class="sel_text"  id="selectBank">请选择银行</strong>
+                </div>
+            </div>
+            <p id="bindInfo" class="l_link" style="display:none;">温馨提示：<br/>选择该银行开通三方存管，您还需要持本人身份证到该银行进行确认签约！</p>
+            <p id="signInfo"></p>
+            <div class="input_form circular">
+            	<div class="input_text">
+                	<span>银行卡号</span><input type="tel" pattern="\d*" class="t1" id="bankcard" placeholder="请输入银行卡号" maxlength="21" />
+                </div>
+                <div class="input_text">
+                	<span>银行密码</span><input type="password" pattern="\d*" class="t1" id="bankcardPwd" placeholder="请输入银行密码" readonly="readonly"/>
+                </div>
+            </div>
+            <p class="l_link none mt5 protocolshow" style="display: none;">阅读<a href="javascript:void(0)" id="protocolName">《券商银行投资者三方协议》</a></p>
+            <div class="rule_check mt5 protocolshow" style="display: none;">
+            	<a href="javascript:void(0)" class="icon_check checked">我已阅读并同意上述协议</a>
+            </div>
+        </div>
+    </section>
+    <div class="fix_bot">
+		<div class="ct_btn">
+        	<a href="javascript:void(0)">确&nbsp;&nbsp;&nbsp;认</a>
+        </div>
+    </div>
+    <div class="sel_list" id="bankListPage" style="display: none;">
+		<div class="sel_info">
+	    	<a href="javascript:void(0)" style="display:none">确定</a>
+	    	<strong>选择银行：</strong>
+	    </div>
+		<ul>
+		</ul>
+	</div>
+</div>

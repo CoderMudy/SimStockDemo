@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SliederViewContrer">
+            <connections>
+                <outlet property="alarmTimeView" destination="Esm-nj-NMW" id="NO8-b2-t1H"/>
+                <outlet property="buyButton" destination="x9M-Vm-IMj" id="yNY-Q0-sJe"/>
+                <outlet property="moneyButtonBuyView" destination="nF4-Ul-fgd" id="zuo-BZ-vAU"/>
+                <outlet property="moneyButtonView" destination="fd3-Bf-SiF" id="2PX-xK-lm2"/>
+                <outlet property="showPriceLable" destination="dEf-uS-eba" id="azQ-TC-qfD"/>
+                <outlet property="sliderPrice" destination="eL5-Gq-rSX" id="LQC-Lr-9I5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="117"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEf-uS-eba">
+                    <rect key="frame" x="10" y="0.0" width="80" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="Axv-jC-Gem"/>
+                        <constraint firstAttribute="width" constant="80" id="HCF-uk-rwu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.031372549019607843" green="0.42745098039215684" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="eL5-Gq-rSX">
+                    <rect key="frame" x="14" y="18" width="202" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="XXb-wu-rDo"/>
+                    </constraints>
+                </slider>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fd3-Bf-SiF" userLabel="simuleftButtonView" customClass="SimuleftImagButtonView">
+                    <rect key="frame" x="224" y="7" width="74" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="4ct-hb-Qm0"/>
+                        <constraint firstAttribute="width" constant="74" id="c6h-Kf-2Gp"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9M-Vm-IMj">
+                    <rect key="frame" x="226" y="47" width="74" height="30"/>
+                    <color key="backgroundColor" red="0.19215686274509805" green="0.73725490196078436" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="ftV-it-2Sc"/>
+                        <constraint firstAttribute="height" constant="30" id="tao-4V-dSi"/>
+                    </constraints>
+                    <state key="normal" title="买入">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nF4-Ul-fgd" userLabel="simuseMonyeButtonView" customClass="simuselMonyeButView">
+                    <rect key="frame" x="16" y="47" width="200" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="5dw-LF-SWy"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Esm-nj-NMW" customClass="OpeningTimeView">
+                    <rect key="frame" x="10" y="87" width="320" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="0Xx-d2-9g1"/>
+                        <constraint firstAttribute="width" constant="320" id="jMX-7z-qae"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Esm-nj-NMW" firstAttribute="top" secondItem="nF4-Ul-fgd" secondAttribute="bottom" constant="10" id="2p3-Fx-4xM"/>
+                <constraint firstItem="eL5-Gq-rSX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="38A-vy-Kq4"/>
+                <constraint firstItem="eL5-Gq-rSX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="18" id="6fu-JH-UO6"/>
+                <constraint firstItem="fd3-Bf-SiF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="7" id="8v2-ub-M9a"/>
+                <constraint firstAttribute="trailing" secondItem="x9M-Vm-IMj" secondAttribute="trailing" constant="20" id="Blg-UZ-xSI"/>
+                <constraint firstItem="x9M-Vm-IMj" firstAttribute="leading" secondItem="nF4-Ul-fgd" secondAttribute="trailing" constant="10" id="EtB-xY-Xiz"/>
+                <constraint firstItem="dEf-uS-eba" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="LOX-he-f6V"/>
+                <constraint firstItem="dEf-uS-eba" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LXz-jI-WH0"/>
+                <constraint firstAttribute="trailing" secondItem="fd3-Bf-SiF" secondAttribute="trailing" constant="22" id="Myl-OY-0JR"/>
+                <constraint firstItem="nF4-Ul-fgd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="PSN-z1-LX3"/>
+                <constraint firstItem="nF4-Ul-fgd" firstAttribute="top" secondItem="eL5-Gq-rSX" secondAttribute="bottom" constant="15" id="Qkg-iL-Gux"/>
+                <constraint firstItem="nF4-Ul-fgd" firstAttribute="top" secondItem="x9M-Vm-IMj" secondAttribute="top" id="hwT-5t-yKV"/>
+                <constraint firstItem="fd3-Bf-SiF" firstAttribute="leading" secondItem="eL5-Gq-rSX" secondAttribute="trailing" constant="10" id="i0u-fB-5DW"/>
+                <constraint firstItem="Esm-nj-NMW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="zC2-zL-fQR"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="587" y="295"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

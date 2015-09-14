@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyChestsTableHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="33"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="钻石图标.png" translatesAutoresizingMaskIntoConstraints="NO" id="yaD-Rj-LDy">
+                    <rect key="frame" x="20" y="5" width="37" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="5W9-df-9Lm"/>
+                        <constraint firstAttribute="width" constant="37" id="r0X-x6-J0y"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="钻石：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gke-4y-8E2">
+                    <rect key="frame" x="65" y="8" width="100" height="17"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Df8-Jx-qE2"/>
+                        <constraint firstAttribute="height" constant="17" id="LRn-i7-Qct"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.57647058823529407" green="0.57647058823529407" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金币：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4G9-NI-33e">
+                    <rect key="frame" x="202" y="8" width="118" height="17"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="5ms-wB-lOy"/>
+                        <constraint firstAttribute="width" constant="118" id="NYp-6V-Vc6"/>
+                        <constraint firstAttribute="width" constant="110" id="YDX-pl-6k2"/>
+                        <constraint firstAttribute="height" constant="17" id="fPM-Q2-eVA"/>
+                        <constraint firstAttribute="height" constant="17" id="pw5-PS-TwV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.57647058819999997" green="0.57647058819999997" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="5ms-wB-lOy"/>
+                            <exclude reference="YDX-pl-6k2"/>
+                            <exclude reference="fPM-Q2-eVA"/>
+                        </mask>
+                    </variation>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="金币0.png" translatesAutoresizingMaskIntoConstraints="NO" id="B58-lV-rtl">
+                    <rect key="frame" x="177" y="8" width="17" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="LN5-MT-Ljc"/>
+                        <constraint firstAttribute="width" constant="17" id="QRW-4r-lMY"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Kg-Y6-ewh" userLabel="grayLine">
+                    <rect key="frame" x="0.0" y="32" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="tAF-V6-UcK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yaD-Rj-LDy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="6ni-Xu-TB0"/>
+                <constraint firstItem="4G9-NI-33e" firstAttribute="leading" secondItem="B58-lV-rtl" secondAttribute="trailing" constant="8" id="8V0-Cz-3e3"/>
+                <constraint firstAttribute="bottom" secondItem="7Kg-Y6-ewh" secondAttribute="bottom" id="Ga0-fF-E99"/>
+                <constraint firstItem="B58-lV-rtl" firstAttribute="centerY" secondItem="gke-4y-8E2" secondAttribute="centerY" id="Qqf-xT-s8F"/>
+                <constraint firstAttribute="trailing" secondItem="4G9-NI-33e" secondAttribute="trailing" id="WBT-kX-MHd"/>
+                <constraint firstItem="7Kg-Y6-ewh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eG4-O4-hgN"/>
+                <constraint firstAttribute="trailing" secondItem="7Kg-Y6-ewh" secondAttribute="trailing" id="kyZ-kX-DS0"/>
+                <constraint firstItem="4G9-NI-33e" firstAttribute="centerY" secondItem="B58-lV-rtl" secondAttribute="centerY" id="ohj-fE-WGe"/>
+                <constraint firstItem="gke-4y-8E2" firstAttribute="centerY" secondItem="yaD-Rj-LDy" secondAttribute="centerY" id="r25-sT-hG1"/>
+                <constraint firstItem="gke-4y-8E2" firstAttribute="leading" secondItem="yaD-Rj-LDy" secondAttribute="trailing" constant="8" id="rCh-hn-M4H"/>
+                <constraint firstItem="B58-lV-rtl" firstAttribute="leading" secondItem="gke-4y-8E2" secondAttribute="trailing" constant="12" id="wVG-la-2Dn"/>
+                <constraint firstAttribute="centerY" secondItem="yaD-Rj-LDy" secondAttribute="centerY" id="y6k-V9-Tlm"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="wVG-la-2Dn"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="diamondLabel" destination="gke-4y-8E2" id="LGy-F1-M80"/>
+                <outlet property="glodLabel" destination="4G9-NI-33e" id="3mA-Ds-u48"/>
+                <outlet property="grayLineHeight" destination="tAF-V6-UcK" id="03G-Xf-u7r"/>
+            </connections>
+            <point key="canvasLocation" x="130" y="144.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="金币0.png" width="23" height="24"/>
+        <image name="钻石图标.png" width="42" height="30"/>
+    </resources>
+</document>

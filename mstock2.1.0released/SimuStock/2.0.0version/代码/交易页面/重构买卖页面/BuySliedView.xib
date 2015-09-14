@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SliederBuySellView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZDP-Ct-jbp">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fMe-f6-x92">
+                            <rect key="frame" x="20" y="0.0" width="80" height="13"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="C1Q-wt-5Gj"/>
+                                <constraint firstAttribute="height" constant="13" id="Uwx-76-gRo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.031372549020000001" green="0.42745098040000001" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <slider opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="4kn-fq-lnw">
+                            <rect key="frame" x="18" y="21" width="198" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="Tgx-ET-YGW"/>
+                            </constraints>
+                            <connections>
+                                <action selector="sliderChangedValue:" destination="iN0-l3-epB" eventType="valueChanged" id="1X0-SH-Dvt"/>
+                            </connections>
+                        </slider>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFz-SW-FfD" userLabel="simuseMonyeButtonView" customClass="simuselMonyeButView">
+                            <rect key="frame" x="20" y="50" width="194" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="4vG-tY-GWA"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZ4-v3-GYH" customClass="BGColorUIButton">
+                            <rect key="frame" x="226" y="50" width="74" height="30"/>
+                            <color key="backgroundColor" red="0.19215686269999999" green="0.73725490199999999" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="74" id="Hkw-YH-gy3"/>
+                                <constraint firstAttribute="height" constant="30" id="WQs-aI-noi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="买入">
+                                <color key="titleShadowColor" white="0.57230681179999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PaU-VT-tjY" userLabel="SimuleftImagButtonView" customClass="SimuleftImagButtonView">
+                            <rect key="frame" x="224" y="10" width="74" height="31"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="jnW-r0-p2S"/>
+                                <constraint firstAttribute="width" constant="74" id="yds-HU-SJy"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97a-O7-hHv" customClass="OpeningTimeView">
+                            <rect key="frame" x="14" y="90" width="306" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="V8X-6I-UeO"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="fMe-f6-x92" firstAttribute="leading" secondItem="ZDP-Ct-jbp" secondAttribute="leading" constant="20" id="3go-Cd-WVI"/>
+                        <constraint firstItem="4kn-fq-lnw" firstAttribute="leading" secondItem="ZDP-Ct-jbp" secondAttribute="leading" constant="20" id="7Zb-hI-Hv2"/>
+                        <constraint firstItem="hFz-SW-FfD" firstAttribute="leading" secondItem="ZDP-Ct-jbp" secondAttribute="leading" constant="20" id="9ce-5W-N62"/>
+                        <constraint firstItem="97a-O7-hHv" firstAttribute="leading" secondItem="ZDP-Ct-jbp" secondAttribute="leading" constant="14" id="Dk9-dG-Zdd"/>
+                        <constraint firstAttribute="height" constant="120" id="GBK-31-GRG"/>
+                        <constraint firstItem="fMe-f6-x92" firstAttribute="top" secondItem="ZDP-Ct-jbp" secondAttribute="top" id="PYS-3U-JLH"/>
+                        <constraint firstItem="MZ4-v3-GYH" firstAttribute="top" secondItem="PaU-VT-tjY" secondAttribute="bottom" constant="9" id="PrK-Nk-k5L"/>
+                        <constraint firstAttribute="trailing" secondItem="MZ4-v3-GYH" secondAttribute="trailing" constant="20" id="TkN-bT-OY4"/>
+                        <constraint firstAttribute="trailing" secondItem="97a-O7-hHv" secondAttribute="trailing" id="Uax-hy-hn3"/>
+                        <constraint firstItem="PaU-VT-tjY" firstAttribute="leading" secondItem="4kn-fq-lnw" secondAttribute="trailing" constant="10" id="gCQ-Lu-HOp"/>
+                        <constraint firstItem="97a-O7-hHv" firstAttribute="top" secondItem="hFz-SW-FfD" secondAttribute="bottom" constant="10" id="jBm-WR-wls"/>
+                        <constraint firstItem="4kn-fq-lnw" firstAttribute="top" secondItem="fMe-f6-x92" secondAttribute="bottom" constant="8" id="kGQ-jk-Nx8"/>
+                        <constraint firstAttribute="trailing" secondItem="PaU-VT-tjY" secondAttribute="trailing" constant="22" id="p59-TR-8gb"/>
+                        <constraint firstItem="PaU-VT-tjY" firstAttribute="top" secondItem="ZDP-Ct-jbp" secondAttribute="top" constant="10" id="u2N-Jw-Ex8"/>
+                        <constraint firstItem="4kn-fq-lnw" firstAttribute="width" secondItem="hFz-SW-FfD" secondAttribute="width" id="uJp-7d-Q0V"/>
+                        <constraint firstItem="hFz-SW-FfD" firstAttribute="top" secondItem="4kn-fq-lnw" secondAttribute="bottom" constant="15" id="wSK-8U-aBP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ZDP-Ct-jbp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FEP-95-AvG"/>
+                <constraint firstItem="ZDP-Ct-jbp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TZv-6v-xpB"/>
+                <constraint firstAttribute="trailing" secondItem="ZDP-Ct-jbp" secondAttribute="trailing" id="gOQ-fw-nYE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="alarmTimeView" destination="97a-O7-hHv" id="5a8-th-zst"/>
+                <outlet property="buyButton" destination="MZ4-v3-GYH" id="MVX-0Y-Odl"/>
+                <outlet property="moneyButtonBuyView" destination="hFz-SW-FfD" id="bUk-uc-41R"/>
+                <outlet property="moneyButtonView" destination="PaU-VT-tjY" id="hFT-4P-p97"/>
+                <outlet property="showLableWidth" destination="C1Q-wt-5Gj" id="ysb-pw-bKU"/>
+                <outlet property="showPriceLabelHorizontal" destination="3go-Cd-WVI" id="ieZ-w5-GNw"/>
+                <outlet property="showPriceLable" destination="fMe-f6-x92" id="2xl-GN-KNL"/>
+                <outlet property="sliderPrice" destination="4kn-fq-lnw" id="8Ml-Gu-vsx"/>
+            </connections>
+            <point key="canvasLocation" x="268" y="261"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

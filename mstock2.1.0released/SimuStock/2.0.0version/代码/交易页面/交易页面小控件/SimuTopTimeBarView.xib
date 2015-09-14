@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="CXt-DL-JEw" customClass="SimuTopTimeBarView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qmy-1o-6g8" userLabel="horizontal SplitLine 01" customClass="CellBottomLinesView">
+                    <rect key="frame" x="0.0" y="29" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ivQ-L0-cR3"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="小闹钟.png" translatesAutoresizingMaskIntoConstraints="NO" id="tgG-eO-iRb">
+                    <rect key="frame" x="8" y="9" width="12" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="Plj-Sc-yQb"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距开盘还有：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fg7-Yt-kzM">
+                    <rect key="frame" x="24" y="9" width="144" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="5Ij-6s-thc"/>
+                        <constraint firstAttribute="width" constant="144" id="Xlq-Qv-w9n"/>
+                        <constraint firstAttribute="width" constant="144" id="eIb-sz-J0J"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Xlq-Qv-w9n"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04/09 18:10 星期四" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2H1-0T-rN3">
+                    <rect key="frame" x="188" y="9" width="122" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="VSo-cT-ODW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2H1-0T-rN3" secondAttribute="trailing" constant="10" id="3hX-8z-YbL"/>
+                <constraint firstItem="fg7-Yt-kzM" firstAttribute="leading" secondItem="tgG-eO-iRb" secondAttribute="trailing" constant="4" id="4SF-sL-nSd"/>
+                <constraint firstItem="fg7-Yt-kzM" firstAttribute="leading" secondItem="CXt-DL-JEw" secondAttribute="leading" constant="26" id="7dc-qW-Xyn"/>
+                <constraint firstAttribute="bottom" secondItem="Qmy-1o-6g8" secondAttribute="bottom" id="8XM-aF-R3N"/>
+                <constraint firstItem="tgG-eO-iRb" firstAttribute="leading" secondItem="CXt-DL-JEw" secondAttribute="leading" constant="8" id="AAD-Uf-R1z"/>
+                <constraint firstItem="fg7-Yt-kzM" firstAttribute="centerY" secondItem="CXt-DL-JEw" secondAttribute="centerY" id="B2S-P3-ETi"/>
+                <constraint firstItem="Qmy-1o-6g8" firstAttribute="leading" secondItem="CXt-DL-JEw" secondAttribute="leading" id="D8C-Rc-PMt"/>
+                <constraint firstItem="fg7-Yt-kzM" firstAttribute="bottom" secondItem="tgG-eO-iRb" secondAttribute="bottom" id="DaP-hm-xmB"/>
+                <constraint firstAttribute="trailing" secondItem="Qmy-1o-6g8" secondAttribute="trailing" id="SXU-Ga-9CA"/>
+                <constraint firstItem="2H1-0T-rN3" firstAttribute="leading" secondItem="fg7-Yt-kzM" secondAttribute="trailing" constant="20" id="VA4-lh-HiF"/>
+                <constraint firstItem="fg7-Yt-kzM" firstAttribute="baseline" secondItem="2H1-0T-rN3" secondAttribute="baseline" id="WEf-HN-TAy"/>
+                <constraint firstItem="fg7-Yt-kzM" firstAttribute="top" secondItem="tgG-eO-iRb" secondAttribute="top" id="zSI-3H-XfT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="7dc-qW-Xyn"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="sttbv_openMarketLB" destination="fg7-Yt-kzM" id="p3j-HN-bYC"/>
+                <outlet property="sttbv_timeShowLB" destination="2H1-0T-rN3" id="Sm1-gj-MiD"/>
+            </connections>
+            <point key="canvasLocation" x="471" y="148"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="小闹钟.png" width="14" height="15"/>
+    </resources>
+</document>

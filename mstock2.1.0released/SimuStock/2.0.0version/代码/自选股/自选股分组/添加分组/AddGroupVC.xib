@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddGroupVC">
+            <connections>
+                <outlet property="confirmButton" destination="1d1-eo-Ifp" id="Pzl-zA-qoU"/>
+                <outlet property="groupNameTextField" destination="SdH-P5-Teg" id="F1K-4b-0Gm"/>
+                <outlet property="lengthLabel" destination="9rI-qR-pqi" id="1nm-ZQ-F95"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="最多输入4个汉字/8个字符" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SdH-P5-Teg">
+                    <rect key="frame" x="24" y="0.0" width="272" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="XzS-Em-g3G"/>
+                        <constraint firstAttribute="width" constant="280" id="iLL-Qo-IiX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="iLL-Qo-IiX"/>
+                        </mask>
+                    </variation>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0QA-zl-Wqk" userLabel="blueLine">
+                    <rect key="frame" x="24" y="60" width="272" height="1"/>
+                    <color key="backgroundColor" red="0.031372549019607843" green="0.42745098039215684" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="2Zl-qK-Wnf"/>
+                        <constraint firstAttribute="height" constant="1" id="3hM-T7-Rlb"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="2Zl-qK-Wnf"/>
+                        </mask>
+                    </variation>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1d1-eo-Ifp" customClass="BGColorUIButton">
+                    <rect key="frame" x="83" y="126" width="155" height="30"/>
+                    <color key="backgroundColor" red="0.99607843137254903" green="0.52156862745098043" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="CwU-ph-gA9"/>
+                        <constraint firstAttribute="width" constant="155" id="f5A-iD-jZu"/>
+                        <constraint firstAttribute="height" constant="30" id="jgm-zw-dpS"/>
+                        <constraint firstAttribute="width" constant="155" id="liA-WC-5Fb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="确定">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="f5A-iD-jZu"/>
+                            <exclude reference="jgm-zw-dpS"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="confirmButtonClick:" destination="-1" eventType="touchUpInside" id="OJB-Az-QdV"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/8" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rI-qR-pqi">
+                    <rect key="frame" x="256" y="60" width="40" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="LQ2-wH-9I4"/>
+                        <constraint firstAttribute="height" constant="21" id="k8j-dH-v6l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1d1-eo-Ifp" firstAttribute="top" secondItem="0QA-zl-Wqk" secondAttribute="bottom" constant="65" id="1vV-Ab-TpC"/>
+                <constraint firstAttribute="trailing" secondItem="0QA-zl-Wqk" secondAttribute="trailing" constant="24" id="2Yj-p0-mFd"/>
+                <constraint firstItem="0QA-zl-Wqk" firstAttribute="top" secondItem="SdH-P5-Teg" secondAttribute="bottom" constant="4" id="721-CT-zRU"/>
+                <constraint firstAttribute="centerX" secondItem="1d1-eo-Ifp" secondAttribute="centerX" id="8i5-ll-XjE"/>
+                <constraint firstAttribute="trailing" secondItem="SdH-P5-Teg" secondAttribute="trailing" constant="24" id="Fgo-XL-cU9"/>
+                <constraint firstItem="SdH-P5-Teg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Prx-Mx-TdP"/>
+                <constraint firstItem="SdH-P5-Teg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="QZr-zS-cH8"/>
+                <constraint firstItem="0QA-zl-Wqk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="SZD-Z9-7Xz"/>
+                <constraint firstAttribute="centerX" secondItem="1d1-eo-Ifp" secondAttribute="centerX" id="iCC-Eb-TIT"/>
+                <constraint firstItem="1d1-eo-Ifp" firstAttribute="top" secondItem="0QA-zl-Wqk" secondAttribute="bottom" constant="65" id="u1N-0S-Hhx"/>
+                <constraint firstItem="9rI-qR-pqi" firstAttribute="top" secondItem="SdH-P5-Teg" secondAttribute="bottom" constant="4" id="uur-oF-VoE"/>
+                <constraint firstAttribute="trailing" secondItem="9rI-qR-pqi" secondAttribute="trailing" constant="24" id="zQE-am-spy"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1vV-Ab-TpC"/>
+                    <exclude reference="iCC-Eb-TIT"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-396" y="67"/>
+        </view>
+    </objects>
+</document>

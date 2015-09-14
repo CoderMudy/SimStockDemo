@@ -1,0 +1,25 @@
+<div class="page" id="account_accountResult" data-pageTitle="开户结果">
+    <header>
+    	<!--<a class="back_btn" href="javascript:void(0)"></a>-->
+        <a class="share_btn" href="javascript:void(0)"></a>
+    	<h2>开户提交</h2>
+    </header>
+    <div class="main">
+    	<div class="step_box"><div style="width:100%;"></div></div>
+        <div class="share_top">
+            <div class="yy_sucbox" style="margin-top:0;">您的开户申请提交成功啦！</div>
+            <div class="share_span">您本次开户时间为<br><span></span></div> 
+            <p></p>
+ 			<p class="mt20">现在就猛击右上角，向您的朋友分享有财开户吧！</p>
+        </div>
+        <p class="mt20 center"></p>
+        <p class="mt10 center mb10"></p>
+    </div>
+<!--    <footer><a class="com_btn" href="javascript:void(0)">马上下载掌证宝</a></footer>-->
+    <div class="ly_shadow" style="display:none">
+    	<div class="share_list">
+        	<a class="a1" href="javascript:void(0)">发送给朋友</a>
+            <a class="a2" href="javascript:void(0)">分享到朋友圈</a>
+        </div>
+    </div>
+</div>

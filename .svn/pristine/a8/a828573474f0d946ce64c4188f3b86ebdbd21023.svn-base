@@ -1,0 +1,28 @@
+<div class="page" id="account_digitalCertificate" data-pageTitle="安装证书">
+	 <header>
+<!--    	<a class="back_btn" href="javascript:void(0)"></a>-->
+        <a class="tel_btn" href="javascript:void(0)"></a>
+    	<h2>数字证书安装</h2>
+    </header>
+    <div class="main success">
+    	<div class="step_box"><div style="width:60%;"></div></div>
+        <div class="az_zsbox mt20">正在安装数字证书<br>请稍等……</div>
+        <!-- <div class="loading mt20"></div> -->
+		<!-- <div class="order_succes" style="margin: auto;width: 235px;height: 235px;margin-top: 40px;margin-bottom: 40px;"><img src="project/images/u23_normal.gif"></div>-->
+		<canvas id="setupProgress" width="300" height="300" style="position:absolute;left:50%;margin-left:-150px;"></canvas>
+		<span id="setupProgressSpan" style="color:#f06868; font-size: 24px; left: 50%; margin-top: 145px; margin-left: -44px; position: absolute; width:100px; text-align:center;"><em id="setupProgressTips">0</em><em style="font-size:16px;">%</em></span>
+		<div class="loading mt20" style="display:none"><span class="load_icon">100<em>%</em></span></div>
+    </div>
+    <div class="main fail" style="display:none">
+    	<div class="step_box"><div style="width:60%;"></div></div>
+        <div class="az_zsbox mt20">
+        	<p>失败原因  出错出错</p>
+        	<p><a class="spel_red" href="javascript:void(0)">安装出现问题？</a></p>
+        </div>
+        <div class="loading mt20">
+        	<span class="az_fsilspan">安装失败</span>
+        </div>
+    </div>
+    <footer style="display:none"><img src="images/foot_img.png" width="100%"></footer>
+    <footer style="display:none"><a class="com_btn" href="javascript:void(0)">下一步</a></footer>
+</div>

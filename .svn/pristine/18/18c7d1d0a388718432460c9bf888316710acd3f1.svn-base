@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AwardsMatchViewController">
+            <connections>
+                <outlet property="addAwardsHeight" destination="IAK-Dc-bop" id="FJm-gb-A7R"/>
+                <outlet property="addAwardsView" destination="Ida-ZA-jTx" id="5ao-du-L7b"/>
+                <outlet property="awardsRankingHeight" destination="Fz8-fQ-6sB" id="iK7-Lg-dyr"/>
+                <outlet property="awardsRankingView" destination="nj9-Zu-zmc" id="aRE-cF-T54"/>
+                <outlet property="awardsSetUpView" destination="fAp-Z9-CNt" id="4fc-LH-XFx"/>
+                <outlet property="baseAwardsHeight" destination="Qsa-gV-uYo" id="1ut-Zl-Tnw"/>
+                <outlet property="baseAwardsView" destination="40t-5H-lqh" id="wCc-RJ-gCW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="186"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAp-Z9-CNt" userLabel="有奖比赛头" customClass="AwardsSetUpView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="87" id="QY4-9j-QNC"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40t-5H-lqh">
+                    <rect key="frame" x="0.0" y="87" width="320" height="99"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nj9-Zu-zmc" userLabel="奖品输入" customClass="AwardsRankingView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+                            <color key="backgroundColor" red="0.79215686269999996" green="0.20000000000000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="Fz8-fQ-6sB"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ida-ZA-jTx" userLabel="添加奖项" customClass="AddAwardsView">
+                            <rect key="frame" x="0.0" y="42" width="320" height="57"/>
+                            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="57" id="IAK-Dc-bop"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Ida-ZA-jTx" firstAttribute="leading" secondItem="40t-5H-lqh" secondAttribute="leading" id="5TL-YW-ZvP"/>
+                        <constraint firstAttribute="trailing" secondItem="Ida-ZA-jTx" secondAttribute="trailing" id="88v-rT-OKO"/>
+                        <constraint firstAttribute="bottom" secondItem="Ida-ZA-jTx" secondAttribute="bottom" id="9kU-8I-dpw"/>
+                        <constraint firstItem="nj9-Zu-zmc" firstAttribute="top" secondItem="40t-5H-lqh" secondAttribute="top" id="Bpn-3V-IH1"/>
+                        <constraint firstAttribute="trailing" secondItem="nj9-Zu-zmc" secondAttribute="trailing" id="N1j-wM-18H"/>
+                        <constraint firstAttribute="height" constant="99" id="Qsa-gV-uYo"/>
+                        <constraint firstItem="nj9-Zu-zmc" firstAttribute="leading" secondItem="40t-5H-lqh" secondAttribute="leading" id="c31-iu-dzx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="40t-5H-lqh" secondAttribute="trailing" id="2wx-gF-SbE"/>
+                <constraint firstItem="40t-5H-lqh" firstAttribute="top" secondItem="fAp-Z9-CNt" secondAttribute="bottom" id="5Fa-Dr-QCg"/>
+                <constraint firstItem="40t-5H-lqh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QRt-at-bGW"/>
+                <constraint firstItem="fAp-Z9-CNt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VBP-X8-6eq"/>
+                <constraint firstAttribute="trailing" secondItem="fAp-Z9-CNt" secondAttribute="trailing" id="mr8-88-3qR"/>
+                <constraint firstItem="fAp-Z9-CNt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ycS-ry-kCL"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="329" y="216"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

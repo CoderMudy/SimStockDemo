@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="181" id="KGk-i7-Jjw" customClass="EPPLockCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已锁定" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a83-eP-n5v">
+                        <rect key="frame" x="138" y="118" width="45" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="3bC-oN-nmj"/>
+                            <constraint firstAttribute="height" constant="18" id="wsd-qz-9dJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.57647058823529407" green="0.57647058823529407" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="锁定图标.png" translatesAutoresizingMaskIntoConstraints="NO" id="t3g-tH-9Fw">
+                        <rect key="frame" x="125" y="33" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="MyO-zt-5fq"/>
+                            <constraint firstAttribute="height" constant="70" id="SWO-rm-hH6"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="t3g-tH-9Fw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="33" id="04b-my-3OJ"/>
+                    <constraint firstItem="t3g-tH-9Fw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="25" id="7BR-vW-AAS"/>
+                    <constraint firstAttribute="centerY" secondItem="a83-eP-n5v" secondAttribute="centerY" id="D8z-TZ-HUR"/>
+                    <constraint firstAttribute="centerY" secondItem="a83-eP-n5v" secondAttribute="centerY" id="ESu-g9-bZo"/>
+                    <constraint firstAttribute="centerX" secondItem="t3g-tH-9Fw" secondAttribute="centerX" id="FAr-8j-dSb"/>
+                    <constraint firstItem="a83-eP-n5v" firstAttribute="top" secondItem="t3g-tH-9Fw" secondAttribute="bottom" constant="15" id="LOW-Zv-bYR"/>
+                    <constraint firstAttribute="centerX" secondItem="t3g-tH-9Fw" secondAttribute="centerX" id="dmi-tJ-kUK"/>
+                    <constraint firstAttribute="centerY" secondItem="t3g-tH-9Fw" secondAttribute="centerY" id="fLl-DI-gvL"/>
+                    <constraint firstAttribute="centerX" secondItem="a83-eP-n5v" secondAttribute="centerX" id="kkN-JO-bKq"/>
+                    <constraint firstAttribute="centerX" secondItem="a83-eP-n5v" secondAttribute="centerX" id="lfh-BE-Koh"/>
+                    <constraint firstItem="t3g-tH-9Fw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="33" id="odZ-h3-ktg"/>
+                    <constraint firstAttribute="centerY" secondItem="t3g-tH-9Fw" secondAttribute="centerY" id="xMq-bS-Rpu"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="04b-my-3OJ"/>
+                        <exclude reference="FAr-8j-dSb"/>
+                        <exclude reference="fLl-DI-gvL"/>
+                        <exclude reference="odZ-h3-ktg"/>
+                        <exclude reference="xMq-bS-Rpu"/>
+                        <exclude reference="D8z-TZ-HUR"/>
+                        <exclude reference="ESu-g9-bZo"/>
+                        <exclude reference="lfh-BE-Koh"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="274" y="290"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="锁定图标.png" width="70" height="70"/>
+    </resources>
+</document>
